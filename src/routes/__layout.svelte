@@ -4,7 +4,9 @@
 
 <div class="wrap">
 	<header>
-		<h1>SvelteKit</h1>
+		<a href="/" class="header-title">
+			<h1>SvelteKit</h1>
+		</a>
 		<nav>
 			<a href="/">Home</a>
 			<a href="blog.svelte">Blogposts</a>
@@ -34,6 +36,11 @@
 		background: lightgray;
 		display: flex;
 		align-items: center;
+	}
+
+	.header-title {
+		color: inherit;
+		text-decoration: none;
 	}
 
 	footer {
