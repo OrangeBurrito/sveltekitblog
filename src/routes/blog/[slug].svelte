@@ -1,15 +1,19 @@
 <script context="module">
-	export function load({page}) {
+	export async function load({fetch, page}) {
+
+		const resp = await fetch('/blog/post')
+		const post = await resp.json()
 		return {
 			props: {
-				title: page?.params?.slug
+				post
 			}
 		}
 	}
 </script>
 
 <script>
-	export let title
+	export let post
 </script>
 
-<h1>🐌 {title}</h1>
+<h1>🐌 {post.title}</h1>
+<p>{post.content}</p>
