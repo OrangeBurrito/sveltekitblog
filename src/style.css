@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+* {
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Fira Code, sans-serif;
+}
+
+h1, h2, h3, h4 {
+	font-family: Inter, Georgia;
+}
