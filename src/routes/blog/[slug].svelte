@@ -1,8 +1,9 @@
 <script context="module">
 	export async function load({fetch, page}) {
 
-		const resp = await fetch('/blog/post')
-		const post = await resp.json()
+		const resp = await fetch('/blog/posts')
+		
+
 		return {
 			props: {
 				post
