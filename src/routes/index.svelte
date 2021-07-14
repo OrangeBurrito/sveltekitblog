@@ -1,12 +1,11 @@
 <script context="module">
 	export async function load({fetch}){
-		const resp = await fetch('/blog/postNames')
-		// const posts = await resp.json()
-		const posts = await resp.json()
-		console.log('idnex ', posts)
+		const resp = await fetch('/blog/postSlugs')
+		const slugs = await resp.json()
+
 		return {
 			props: {
-				posts
+				posts: slugs
 			}
 		}
 	}
@@ -17,6 +16,10 @@ import PostList from "$lib/components/PostList.svelte";
 
 	export let posts = []
 </script>
+
+<svelte:head>
+	<title>OrangeBurrito</title>
+</svelte:head>
 
 <h1> home</h1>
 

@@ -2,6 +2,10 @@
 	import "../style.css";
 </script>
 
+<svelte:head>
+	<html lang="en"/>
+</svelte:head>
+
 <div class="wrap">
 	<header>
 		<a href="/" class="header-title">
@@ -17,7 +21,7 @@
 		<slot />
 	</main>
 
-	<footer>Copyright © OrangeBurrito 2021</footer>
+	<!-- <footer>Copyright © OrangeBurrito 2021</footer> -->
 </div>
 
 
@@ -25,17 +29,12 @@
 	.wrap {
 		height: 100vh;
 		display: grid;
-		grid-template-rows: 1fr 8fr 1fr;
-	}
-
-	.wrap > * {
-		width: 100%;
+		grid-template-columns: 1fr 3fr;
 	}
 	
 	header {
-		background: lightgray;
-		display: flex;
-		align-items: center;
+		padding: 1rem;
+		background: silver;
 	}
 
 	.header-title {
