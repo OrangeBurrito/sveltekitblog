@@ -1,11 +1,12 @@
 <script context="module">
 	export async function load({fetch}){
-		const resp = await fetch('/blog/postSlugs')
-		const slugs = await resp.json()
+		// const resp = await fetch('/blog/postSlugs')
+		const resp = await fetch('/blog/posts.json')
+		const posts = await resp.json()
 
 		return {
 			props: {
-				posts: slugs
+				posts
 			}
 		}
 	}

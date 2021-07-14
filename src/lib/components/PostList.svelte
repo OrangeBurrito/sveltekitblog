@@ -5,7 +5,7 @@
 <div class="list">
 	{#each posts as post}
 	<div>
-		<a href={`blog/${post}`}>{post}</a>
+		<a href={`blog/${post.slug}`}>{post.title}</a>
 	</div>
 	{/each}
 </div>

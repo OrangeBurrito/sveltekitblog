@@ -7,16 +7,51 @@ const readFileAsync = util.promisify(fs.readFile)
 
 export async function getPosts() {
 	const filenames = await readDirAsync('src/posts')
-	const posts = filenames.map(n => n.slice(0, n.lastIndexOf('.')))
+	const posts = []
+
+	for (let filename of filenames) {
+		let post = await getPostBySlug(getSlug(filename))
+		posts.push(post)
+	}
 
 	return posts
 }
 
-export async function getPostContent(slug) {
+export async function getPostBySlug(slug) {
+	const markdown = await getPostContent(slug)
+	const result = parseMarkdown(markdown)
+
+	const post = {
+		title: result.frontmatter.find(t => t.key === 'title').value,
+		date: result.frontmatter.find(t => t.key === 'date').value,
+		content: result.content,
+		slug
+	}
+
+	return post
+}
+
+async function getPostContent(slug) {
 	const fullpath = path.join('src/posts', `${slug}.md`)
 	const postContent = await readFileAsync(fullpath, 'utf-8')
 
 	return postContent
+}
+
+function parseMarkdown(md) {
+	const regex = /^\s*(-{3,}\s)(?<frontmatter>[\w\W]+)(-{3,})\s(?<content>[\w\W]+)/i
+	const result = md.match(regex)
+	if (!result) {
+		return {
+			frontmatter: [],
+			content: ''
+		}
+	}
+
+	return {
+		frontmatter: parseKeyValues(result.groups.frontmatter),
+		content: result.groups.content
+	}
 }
 
 function parseKeyValues(fm) {
@@ -34,18 +69,6 @@ function parseKeyValues(fm) {
 		return keyValues
 }
 
-export function parseMarkdown(md) {
-	const regex = /^\s*(-{3,}\s)(?<frontmatter>[\w\W]+)(-{3,})\s(?<content>[\w\W]+)/i
-	const result = md.match(regex)
-	if (!result) {
-		return {
-			frontmatter: [],
-			content: ''
-		}
-	}
-	console.log(result.groups.frontmatter)
-	return {
-		frontmatter: parseKeyValues(result.groups.frontmatter),
-		content: result.groups.content
-	}
+function getSlug(filename) {
+	return filename.slice(0, filename.lastIndexOf('.'))
 }

@@ -41,9 +41,4 @@
 		color: inherit;
 		text-decoration: none;
 	}
-
-	footer {
-		background: gray;
-		text-align: center;
-	}
 </style>
