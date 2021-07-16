@@ -24,6 +24,7 @@ export async function getPostBySlug(slug) {
 	const post = {
 		title: result.frontmatter.find(t => t.key === 'title').value,
 		date: result.frontmatter.find(t => t.key === 'date').value,
+		coverImage: result.frontmatter.find(t => t.key === 'coverImage')?.value,
 		content: result.content,
 		slug
 	}

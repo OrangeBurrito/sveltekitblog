@@ -1,28 +1,35 @@
 <script>
+import Post from "./Post.svelte";
+
 	export let posts = []
 </script>
 
 <div class="list">
 	{#each posts as post}
-	<div>
-		<a href={`blog/${post.slug}`}>{post.title}</a>
-	</div>
+	<a href={`blog/${post.slug}`}>
+		<img src={post.coverImage} alt="can't find it :("/>
+		<h2>{post.title}</h2>
+		<pre>{post.date}</pre>
+	</a>
 	{/each}
 </div>
 
 <style>
-	.list div {
-		background:#cddceb;
-		margin-bottom: 1rem;
-		padding: 1rem 2rem;
-		text-decoration: none;
-		font-size: 1.2rem;
+	.list a {
 		display: inline-block;
+		width: 400px;
+		border-radius: 15px;
+		padding: 2rem;
+		margin: 0.5rem;
+		font-size: 1.2rem;
+		text-decoration: none;
+		text-align: center;
+		color: inherit;
+		background:#cddceb;
 	}
 
-	.list div:hover {
+	.list a:hover {
 		cursor: pointer;
 		background: cornflowerblue;
-		font-size: 1.3rem;
 	}
 </style>

@@ -12,3 +12,8 @@ body {
 h1, h2, h3, h4 {
 	font-family: Inter, Georgia;
 }
+
+img {
+	max-width: 100%;
+	object-fit: cover;
+}

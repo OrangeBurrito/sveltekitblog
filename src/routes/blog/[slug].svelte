@@ -1,4 +1,5 @@
 <script context="module">
+	import Post from '$lib/components/Post.svelte'
 	import marked from 'marked'
 
 	export async function load({fetch, page: {params: {slug}}}) {
@@ -24,6 +25,4 @@
 	<title>{post.title}</title>
 </svelte:head>
 
-<h1>{post.title}</h1>
-<pre>{post.date}</pre>
-<div>{@html post.content}</div>
+<Post {post}/>
