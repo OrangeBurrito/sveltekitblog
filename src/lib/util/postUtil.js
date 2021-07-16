@@ -1,6 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import util from 'util'
+import {parseDate} from './dateUtil'
 
 const readDirAsync = util.promisify(fs.readdir)
 const readFileAsync = util.promisify(fs.readFile)
@@ -14,7 +15,7 @@ export async function getPosts() {
 		posts.push(post)
 	}
 
-	return posts
+	return posts.slice().sort((a,b) => a.date > b.date ? -1 : 1)
 }
 
 export async function getPostBySlug(slug) {
@@ -23,7 +24,7 @@ export async function getPostBySlug(slug) {
 
 	const post = {
 		title: result.frontmatter.find(t => t.key === 'title').value,
-		date: result.frontmatter.find(t => t.key === 'date').value,
+		date: parseDate(result.frontmatter.find(t => t.key === 'date').value),
 		coverImage: result.frontmatter.find(t => t.key === 'coverImage')?.value,
 		content: result.content,
 		slug

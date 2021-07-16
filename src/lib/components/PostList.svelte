@@ -8,8 +8,10 @@ import Post from "./Post.svelte";
 	{#each posts as post}
 	<a href={`blog/${post.slug}`}>
 		<img src={post.coverImage} alt="can't find it :("/>
-		<h2>{post.title}</h2>
-		<pre>{post.date}</pre>
+		<div class="text">
+			<h2>{post.title}</h2>
+			<pre>{post.date}</pre>
+		</div>
 	</a>
 	{/each}
 </div>
@@ -17,13 +19,13 @@ import Post from "./Post.svelte";
 <style>
 	.list a {
 		display: inline-block;
+		height: 300px;
 		width: 400px;
 		border-radius: 15px;
-		padding: 2rem;
 		margin: 0.5rem;
 		font-size: 1.2rem;
+		overflow: hidden;
 		text-decoration: none;
-		text-align: center;
 		color: inherit;
 		background:#cddceb;
 	}
@@ -31,5 +33,14 @@ import Post from "./Post.svelte";
 	.list a:hover {
 		cursor: pointer;
 		background: cornflowerblue;
+	}
+
+	.list a img {
+		width: 100%;
+		height: 65%;
+	}
+
+	.list a .text {
+		padding: 1rem 2rem;
 	}
 </style>
