@@ -15,7 +15,7 @@ export async function getPosts() {
 		posts.push(post)
 	}
 
-	return posts.slice().sort((a,b) => a.date > b.date ? -1 : 1)
+	return posts.slice().sort((a,b) => a.sortDate > b.sortDate ? -1 : 1)
 }
 
 export async function getPostBySlug(slug) {
@@ -24,11 +24,13 @@ export async function getPostBySlug(slug) {
 
 	const post = {
 		title: result.frontmatter.find(t => t.key === 'title').value,
-		date: parseDate(result.frontmatter.find(t => t.key === 'date').value),
+		date: result.frontmatter.find(t => t.key === 'date').value,
 		coverImage: result.frontmatter.find(t => t.key === 'coverImage')?.value,
 		content: result.content,
 		slug
 	}
+
+	post.sortDate = parseDate(post.date)
 
 	return post
 }

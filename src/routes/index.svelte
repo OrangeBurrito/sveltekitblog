@@ -13,6 +13,8 @@
 </script>
 
 <script>
+import Date from "$lib/components/Date.svelte";
+
 import PostList from "$lib/components/PostList.svelte";
 
 	export let posts = []

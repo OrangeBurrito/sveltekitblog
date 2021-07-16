@@ -1,7 +1,7 @@
 <script>
-import Post from "./Post.svelte";
-
 	export let posts = []
+
+
 </script>
 
 <div class="list">
@@ -10,7 +10,7 @@ import Post from "./Post.svelte";
 		<img src={post.coverImage} alt="can't find it :("/>
 		<div class="text">
 			<h2>{post.title}</h2>
-			<pre>{post.date}</pre>
+			<p>{post.date}</p>
 		</div>
 	</a>
 	{/each}
