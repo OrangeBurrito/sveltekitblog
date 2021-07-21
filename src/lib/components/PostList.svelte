@@ -1,43 +1,48 @@
 <script>
-	export let posts = []
-
-
+	export let posts = [];
 </script>
 
 <div class="list">
 	{#each posts as post}
-	<a href={`blog/${post.slug}`}>
-		<img src={post.coverImage} alt="can't find it :("/>
-		<div class="text">
-			<h2>{post.title}</h2>
-			<p>{post.date}</p>
-		</div>
-	</a>
+		<a class="card" href={`blog/${post.slug}`}>
+			<img src={post.coverImage}/>
+			<div class="text">
+				<h2>{post.title}</h2>
+				<p>{post.date}</p>
+			</div>
+		</a>
 	{/each}
 </div>
 
 <style>
-	.list a {
-		display: inline-block;
-		height: 300px;
-		width: 400px;
-		border-radius: 15px;
-		margin: 0.5rem;
-		font-size: 1.2rem;
-		overflow: hidden;
-		text-decoration: none;
-		color: inherit;
-		background:#cddceb;
+	.list {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 1rem;
+		padding: 1rem;
+		height: 600px;
 	}
 
-	.list a:hover {
-		cursor: pointer;
-		background: cornflowerblue;
+	.card {
+		position: relative;
+		display: grid;
+		grid-template-rows: 2fr 1fr;
+		top: 0;
+		-webkit-transition: 0.1s ease-out;
+	}
+	
+	.card:hover {
+		top: -5px;
+		color: var(--accent);
+		box-shadow: rgba(28, 33, 51, 0.25) 0px 25px 50px -12px;
 	}
 
-	.list a img {
+	.card img {
+		background-image: url("https://cdn.wallpapersafari.com/46/92/aXvp5q.jpg");
+		background-size: cover;
+		background-position: center;
 		width: 100%;
-		height: 65%;
+		height: 100%;
 	}
 
 	.list a .text {

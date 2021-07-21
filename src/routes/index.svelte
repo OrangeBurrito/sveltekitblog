@@ -13,8 +13,6 @@
 </script>
 
 <script>
-import Date from "$lib/components/Date.svelte";
-
 import PostList from "$lib/components/PostList.svelte";
 
 	export let posts = []
@@ -24,6 +22,14 @@ import PostList from "$lib/components/PostList.svelte";
 	<title>OrangeBurrito</title>
 </svelte:head>
 
-<h1> home</h1>
+<main>
+	<PostList {posts}/>
+</main>
 
-<PostList {posts}/>
+<style>
+	main {
+		display: grid;
+		grid-template-columns: 8fr 1fr;
+		/* max-width: 100vh; */
+	}
+</style>
