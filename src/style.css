@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Actor&family=Inter:wght@700&display=swap');
 
 :root {
 	--black: #1c2133;
@@ -7,15 +7,20 @@
 	--light: #afc1d6;
 	--white: #f7f9f7;
 	--accent: #b96d40;
-
 	--bdrs: 15px;
 	--card-shadow: rgba(28, 33, 51, 0.1) 0px 20px 25px -5px, rgba(28, 33, 51, 0.04) 0px 10px 10px -5px;
 
 	--small-fz: 12px;
 	--regular-fz: 18px;
+	--medium-fz: 24px;
 	--big-fz: 30px;
 	--huge-fz: 48px;
 	--massive-fz: 64px;
+
+	--padding-small: 0.5rem;
+	--padding-regular: 1rem;
+	--padding-medium: 1.5rem;
+	--padding-large: 2rem;
 }
 
 * {
@@ -24,7 +29,7 @@
 }
 
 body {
-	font-size: 18px;
+	font-size: var(--regular-fz);
 	font-family: Helvetica, sans-serif;
 	color: var(--black);
 	background: var(--light);
@@ -34,9 +39,21 @@ h1, h2, h3, h4 {
 	font-family: Inter, Georgia;
 }
 
+p {
+	line-height: 150%;
+}
+
 img {
 	max-width: 100%;
 	object-fit: cover;
+}
+
+img.placeholder {
+	background-image: url("https://cdn.wallpapersafari.com/46/92/aXvp5q.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100%;
 }
 
 a {
@@ -46,7 +63,27 @@ a {
 
 .card {
 	overflow: hidden;
+	position: relative;
+	display: inline-block;
 	background: var(--white);
 	border-radius: var(--bdrs);
 	box-shadow: var(--card-shadow);
+}
+
+.text-container {
+	display: flex;
+	flex-direction: column;
+	gap: var(--padding-small);
+	padding: var(--padding-regular);
+}
+
+.info-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: var(--padding-regular);
+}
+
+.date {
+	font-family: Actor;
 }

@@ -2,9 +2,77 @@
 	export let post = {}
 </script>
 
-<h1>{post.title}</h1>
-<pre>{post.date}</pre>
-{#if post.coverImage}
-<img src={post.coverImage} alt="featuredimage"/>
-{/if}
-<div>{@html post.content}</div>
+<div class="post-wrap">
+	<header>
+		<div class="text-container">
+			<h1>{post.title}</h1>
+			<div class="date">{post.date}</div>
+		</div>
+		<div class="cover-image">
+			<img class="placeholder" src={post.coverImage}/>
+		</div>
+	</header>
+	<div class="content">{@html post.content}</div>
+	<footer>Copyright © OrangeBurrito 2021</footer>
+</div>
+
+<style>
+	.post-wrap {
+		position: absolute;
+  	left: 50%;
+  	transform: translate(-50%, 0);
+		padding: var(--padding-medium);
+		background: var(--white);
+	}
+	
+	header {
+		position: relative;
+		overflow: hidden;
+		border-radius: var(--bdrs);
+		background: salmon;
+		margin-bottom: var(--padding-medium);
+		
+	}
+/* 
+	:global(.navbar::after) {
+		content: '';
+		height: 400px;
+		background: linear-gradient(to bottom, var(--medium), var(--light));
+	} */
+
+	.cover-image {
+		width: 100%;
+		height: 300px;
+	}
+
+	.text-container {
+		font-size: var(--medium-fz);
+		position: absolute;
+		color: var(--white);
+		background: rgba(28,33,51, 0.8);
+		padding: var(--padding-medium) var(--padding-large);
+		border-bottom-right-radius: var(--bdrs);
+	}
+
+	
+
+	.content :global(p) {
+		margin-bottom: var(--padding-medium);
+	}
+
+	.content :global(.image-caption) {
+		text-align: center;
+	}
+
+	footer {
+		font-family: Fira Code;
+		text-align: center;
+
+		padding: var(--padding-medium);
+		margin: -1.5rem;
+		margin-top: 1rem;
+
+		color: var(--white);
+		background: var(--dark);
+	}
+</style>

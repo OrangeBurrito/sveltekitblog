@@ -3,15 +3,9 @@
 	import "../style.css";
 </script>
 
-<svelte:head>
-	<html lang="en"/>
-</svelte:head>
-
 <div class="wrap">
 	<Navbar/>
-
 		<slot />
-	<!-- <footer>Copyright © OrangeBurrito 2021</footer> -->
 </div>
 
 

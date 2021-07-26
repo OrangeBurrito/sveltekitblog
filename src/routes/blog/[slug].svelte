@@ -2,6 +2,10 @@
 	import Post from '$lib/components/Post.svelte'
 	import marked from 'marked'
 
+	marked.setOptions({
+		breaks: true
+	})
+
 	export async function load({fetch, page: {params: {slug}}}) {
 
 		const resp = await fetch(`/blog/${slug}.json`)
