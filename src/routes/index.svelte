@@ -13,6 +13,7 @@
 
 <script>
 import PostList from "$lib/components/PostList.svelte";
+import SortBar from "$lib/components/SortBar.svelte";
 
 	export let posts = []
 </script>
@@ -23,11 +24,22 @@ import PostList from "$lib/components/PostList.svelte";
 
 <main>
 	<PostList {posts}/>
+	<SortBar/>
+	<div class="card library">
+		<h3>Recently Read Reviews</h3>
+	</div>	
 </main>
 
 <style>
 	main {
 		display: grid;
 		grid-template-columns: 8fr 1fr;
+	}
+
+	.library {
+		position: absolute;
+		padding: var(--padding-regular);
+		right: var(--padding-medium);
+		bottom: var(--padding-medium);
 	}
 </style>

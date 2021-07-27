@@ -30,7 +30,7 @@
 
 body {
 	font-size: var(--regular-fz);
-	font-family: Helvetica, sans-serif;
+	font-family: Helvetica Neue, sans-serif;
 	color: var(--black);
 	background: var(--light);
 }

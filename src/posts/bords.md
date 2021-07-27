@@ -4,7 +4,6 @@ date: 2021-03-03
 coverImage: 'https://i.pinimg.com/736x/7b/fa/a7/7bfaa744602122753529a30e31131ffd.jpg'
 ---
 
-
 ## introduction
 Birds.  We've all encountered them, and chances are you've seen or heard one recently.
 Whether it be from birdsong from afar drifting into your ear canal or head-bobbing fiends congregating
@@ -55,7 +54,7 @@ Surprisingly, Quinoafloatmust were toothless. A theory goes that they fed like [
 gliding over water, cleaving the waves with their proto-beaks in the search for fish.  Later, a few sceptical paleontologists
 debunked the theory with a study that showed the skim-feeding method generating too much drag to be efficient.
 
-<img src="insert pic"/>
+<img src=""/>
 <p class="image-caption">Inefficiency of the proposed skim-feeding method</p>
 
 Another, more convincing theory is that Quadruplesmoketusks were terrestial hunters that hunted small vertebrates on land
@@ -64,7 +63,7 @@ Another, more convincing theory is that Quadruplesmoketusks were terrestial hunt
 With the discovery of more and more fossils, evidence increasingly points to the large beak-spears
 having a dual function as a tool for bored pterosaurs, who could have frequently used them in mock-swordfights with their siblings. 
 
-<img src="insert pic"/>
+<img src=""/>
 <p class="image-caption">The art of swordsmanship is said to have surfaced in the late Triassic Period</p>
 
 For quite a long time, pterosaurs flourished in the substantially oxygen-rich and humid sans-ice-caps world of yesteryear.

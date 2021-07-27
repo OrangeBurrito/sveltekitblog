@@ -6,6 +6,7 @@ import {parseDate} from './dateUtil'
 const readDirAsync = util.promisify(fs.readdir)
 const readFileAsync = util.promisify(fs.readFile)
 
+
 export async function getPosts() {
 	const filenames = await readDirAsync('src/posts')
 	const posts = []
@@ -15,7 +16,7 @@ export async function getPosts() {
 		posts.push(post)
 	}
 
-	return posts.slice().sort((a,b) => a.sortDate > b.sortDate ? -1 : 1)
+		return posts.slice().sort((a,b) => a.sortDate > b.sortDate ? -1 : 1)
 }
 
 export async function getPostBySlug(slug) {

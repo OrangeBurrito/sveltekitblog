@@ -54,14 +54,36 @@
 		border-bottom-right-radius: var(--bdrs);
 	}
 
-	
-
 	.content :global(p) {
 		margin-bottom: var(--padding-medium);
 	}
 
+	.content :global(a) {
+		color: rgb(0,100,200);
+		text-decoration: none;
+	}
+
+	.content :global(a:hover) {
+		text-decoration: underline;
+	}
+
+	.content :global(a:visited){
+		color: rgb(0,80,160);
+	}
+
+	.content :global(img) {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: var(--padding-regular);
+		/* width: 100%; */
+		border-radius: var(--bdrs);
+	}
+
 	.content :global(.image-caption) {
 		text-align: center;
+		font-family: Actor, sans-serif;
+		margin-bottom: var(--padding-large);
 	}
 
 	footer {
