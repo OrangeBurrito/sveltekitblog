@@ -18,11 +18,10 @@
 
 <style>
 	.post-wrap {
-		position: absolute;
-  	left: 50%;
-  	transform: translate(-50%, 0);
 		padding: var(--padding-medium);
 		background: var(--white);
+		width: 60ch;
+		margin: 0 auto;
 	}
 	
 	header {
@@ -31,7 +30,6 @@
 		border-radius: var(--bdrs);
 		background: salmon;
 		margin-bottom: var(--padding-medium);
-		
 	}
 /* 
 	:global(.navbar::after) {

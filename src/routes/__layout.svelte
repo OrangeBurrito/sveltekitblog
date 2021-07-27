@@ -15,6 +15,11 @@
 	.wrap {
 		height: 100vh;
 		display: grid;
-		grid-template-columns: 1fr 4fr;
+	}
+	
+	@media (min-width: 1024px) {
+		.wrap {
+			grid-template-columns: 1fr 4fr;
+		}
 	}
 </style>
