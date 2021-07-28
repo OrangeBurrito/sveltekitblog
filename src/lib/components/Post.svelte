@@ -1,5 +1,14 @@
 <script>
-	export let post = {}
+	import { onDestroy } from 'svelte';
+	import {fadeOutOn, fadeOutOff} from '$lib/components/Navbar.svelte'
+	export let post = {};
+
+	fadeOutOn()
+
+	onDestroy(() => {
+		console.log('deshtroyed')
+		fadeOutOff()
+	})
 </script>
 
 <div class="post-wrap">
@@ -9,7 +18,7 @@
 			<div class="date">{post.date}</div>
 		</div>
 		<div class="cover-image">
-			<img class="placeholder" src={post.coverImage}/>
+			<img class="placeholder" src={post.coverImage} />
 		</div>
 	</header>
 	<div class="content">{@html post.content}</div>
@@ -23,20 +32,13 @@
 		width: 60ch;
 		margin: 0 auto;
 	}
-	
+
 	header {
 		position: relative;
 		overflow: hidden;
 		border-radius: var(--bdrs);
-		background: salmon;
 		margin-bottom: var(--padding-medium);
 	}
-/* 
-	:global(.navbar::after) {
-		content: '';
-		height: 400px;
-		background: linear-gradient(to bottom, var(--medium), var(--light));
-	} */
 
 	.cover-image {
 		width: 100%;
@@ -47,7 +49,7 @@
 		font-size: var(--medium-fz);
 		position: absolute;
 		color: var(--white);
-		background: rgba(28,33,51, 0.8);
+		background: rgba(28, 33, 51, 0.8);
 		padding: var(--padding-medium) var(--padding-large);
 		border-bottom-right-radius: var(--bdrs);
 	}
@@ -57,7 +59,7 @@
 	}
 
 	.content :global(a) {
-		color: rgb(0,100,200);
+		color: rgb(0, 100, 200);
 		text-decoration: none;
 	}
 
@@ -65,8 +67,8 @@
 		text-decoration: underline;
 	}
 
-	.content :global(a:visited){
-		color: rgb(0,80,160);
+	.content :global(a:visited) {
+		color: rgb(0, 80, 160);
 	}
 
 	.content :global(img) {
@@ -94,5 +96,13 @@
 
 		color: var(--white);
 		background: var(--dark);
+	}
+
+	@media (min-width: 1024px) {
+		.post-wrap {
+			position: absolute;
+    	left: 50%;
+    	transform: translate(-50%);
+		}
 	}
 </style>

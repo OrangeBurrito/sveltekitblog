@@ -1,8 +1,22 @@
-<script>
-	import Polaroid from "$lib/components/Polaroid.svelte";
+<script context="module">
+	let isFadeOut = false
+	
+	export function fadeOutOn() {
+		isFadeOut = true;
+	}
+	
+	export function fadeOutOff() {
+		isFadeOut = false;
+	}
+
 </script>
 
-<header>
+<script>
+	import Polaroid from "$lib/components/Polaroid.svelte";
+
+</script>
+
+<header class:fadeout={isFadeOut === true}>
 	<a href="/">
 		<h1 class="title">Orange<span>Blog</span></h1>
 	</a>
@@ -11,7 +25,7 @@
 		<a href="blog.svelte">Blogposts</a>
 	</nav>
 
-	<Polaroid/>
+	<Polaroid />
 </header>
 
 <style>
@@ -25,8 +39,14 @@
 		margin: 0 0 8px 8px;
 		font-family: "IBM Plex Mono";
 		font-size: 46px;
-		
+
 		text-shadow: -8px 8px var(--dark);
+	}
+
+	.fadeout::after {
+		content: "";
+		height: 400px;
+		background: linear-gradient(to bottom, var(--medium), var(--light));
 	}
 
 	nav {
@@ -66,6 +86,7 @@
 
 	@media (min-width: 1024px) {
 		header {
+			height: 100vh;
 			display: grid;
 		}
 
@@ -99,106 +120,4 @@
 			display: block;
 		}
 	}
-
-	/* header::after {
-		content: '';
-		height: 400px;
-		background: linear-gradient(to bottom, var(--medium), var(--light));
-	} */
-
-	/*  OLD STUFF
-	
-	header .title {
-		padding: var(--padding-regular);
-		margin: 0 0 8px 8px;
-		font-family: "IBM Plex Mono";
-		font-size: 46px;
-		
-		text-shadow: -8px 8px var(--dark);
-	}
-
-	nav a {
-		display: block;
-		font-family: "Fira Code";
-		font-size: 26px;
-		padding: var(--padding-regular) 2rem;
-	}
-
-	nav a.active {
-		background: var(--dark);
-	}
-
-	nav a.active::before {
-		content: "> ";
-	}
-
-	.polaroid {
-		position: relative;
-		width: 70%;
-		margin: 0 auto;
-	}
-
-	.polaroid .tape {
-		z-index: 1;
-		position: absolute;
-		margin-left: auto;
-		margin-right: auto;
-		left: 20%;
-		right: 20%;
-		top: -10%;
-		width: 18%;
-		height: 24%;
-		transform: rotate(4deg);
-		background: #beb98b;
-		box-shadow: var(--card-shadow);
-		box-shadow: 1.67379px 4.18446px 8.36893px 0.836893px rgba(28, 33, 51, 0.4);
-	}
-
-	.polaroid .content {
-		transition: 0.1s ease-out;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-
-		padding: var(--padding-regular);
-
-		text-align: center;
-		transform: rotate(-2deg);
-
-		color: var(--black);
-		background: var(--white);
-		box-shadow: 4.18446px 8.34757px 8.36893px rgba(28, 33, 51, 0.1)
-	}
-
-	.polaroid img {
-		width: 100%;
-	}
-
-	.polaroid .caption {
-		font-size: 1.2rem;
-		padding-top: var(--padding-regular);
-	}
-
-	.polaroid:hover > .content {
-		transform: rotate(0deg);
-		box-shadow: -4.18446px 3.34757px 8.36893px rgba(28, 33, 51, 0.1);
-	}
-
-	.polaroid:hover > .tape { transform: rotate(5deg)}
-	
-
-	@media screen and (min-width: 1150px) {
-		header .title {
-			font-size: var(--massive-fz);
-		}
-
-		nav a {
-			font-size: 30px;
-		}
-
-		.polaroid .caption {
-			font-size: 1.4rem;
-		}
-	} */
 </style>
