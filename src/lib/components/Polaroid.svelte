@@ -8,11 +8,12 @@
 
 <style>
 	@font-face {
-    font-family: 'Redacted Script Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Redacted Script Bold'), url('/srcRedactedScript-Bold.woff') format('woff');
-    }
+		font-family: "Redacted Script Bold";
+		font-style: normal;
+		font-weight: normal;
+		src: local("Redacted Script Bold"),
+			url("/srcRedactedScript-Bold.woff") format("woff");
+	}
 
 	.polaroid {
 		position: absolute;
@@ -22,7 +23,7 @@
 		right: 1rem;
 		background: #fff;
 		font-size: 1rem;
-		font-family: 'Redacted Script Bold';
+		font-family: "Redacted Script Bold";
 		transform: rotate(-2deg);
 		align-self: flex-start;
 	}

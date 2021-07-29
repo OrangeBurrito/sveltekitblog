@@ -1,13 +1,14 @@
 <script>
-	import { onDestroy } from 'svelte';
-	import {fadeOutOn, fadeOutOff} from '$lib/components/Navbar.svelte'
+	import {onMount, onDestroy} from 'svelte'
+	import {isFadeout} from '../../stores.js'
 	export let post = {};
 
-	fadeOutOn()
+	onMount(() => {
+		$isFadeout = true
+	})
 
 	onDestroy(() => {
-		console.log('deshtroyed')
-		fadeOutOff()
+		$isFadeout = false
 	})
 </script>
 
@@ -18,7 +19,7 @@
 			<div class="date">{post.date}</div>
 		</div>
 		<div class="cover-image">
-			<img class="placeholder" src={post.coverImage} />
+			<img class="placeholder" src={post.coverImage} alt="" />
 		</div>
 	</header>
 	<div class="content">{@html post.content}</div>
@@ -101,8 +102,14 @@
 	@media (min-width: 1024px) {
 		.post-wrap {
 			position: absolute;
-    	left: 50%;
-    	transform: translate(-50%);
+			left: 50%;
+			transform: translate(-50%);
 		}
+
+		/* .navbar-wrap::after {
+			content: "";
+			height: 400px;
+			background: linear-gradient(to bottom, var(--medium), var(--light));
+		} */
 	}
 </style>

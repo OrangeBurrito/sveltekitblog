@@ -36,3 +36,11 @@
 
 
 <Post {post}/>
+
+<style>
+	/* .navbar-wrap::after {
+		content: "";
+		height: 400px;
+		background: linear-gradient(to bottom, var(--medium), var(--light));
+	} */
+</style>

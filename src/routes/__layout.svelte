@@ -1,16 +1,15 @@
 <script>
-	import Navbar from '$lib/components/Navbar.svelte'
+	import Navbar from "$lib/components/Navbar.svelte";
 	import "../style.css";
 </script>
 
 <div class="wrap">
-	<Navbar/>
-		<slot />
+	<Navbar />
+	<slot />
 </div>
 
-
 <style>
-	@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=IBM+Plex+Mono:wght@700&display=swap');
+	@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=IBM+Plex+Mono:wght@700&display=swap");
 
 	.wrap {
 		position: relative;

@@ -1,22 +1,9 @@
-<script context="module">
-	let isFadeOut = false
-	
-	export function fadeOutOn() {
-		isFadeOut = true;
-	}
-	
-	export function fadeOutOff() {
-		isFadeOut = false;
-	}
-
-</script>
-
 <script>
 	import Polaroid from "$lib/components/Polaroid.svelte";
-
+	import {isFadeout} from '../../stores.js'
 </script>
 
-<header class:fadeout={isFadeOut === true}>
+<div class="navbar-wrap" class:fadeout={$isFadeout === true}>
 	<a href="/">
 		<h1 class="title">Orange<span>Blog</span></h1>
 	</a>
@@ -26,27 +13,27 @@
 	</nav>
 
 	<Polaroid />
-</header>
+</div>
 
 <style>
-	header {
+	.navbar-wrap {
 		color: var(--white);
 		background: var(--medium);
 	}
 
-	header .title {
+	.fadeout::after {
+			content: "";
+			height: 400px;
+			background: linear-gradient(to bottom, var(--medium), var(--light));
+	}
+
+	.navbar-wrap .title {
 		padding: var(--padding-regular);
 		margin: 0 0 8px 8px;
 		font-family: "IBM Plex Mono";
 		font-size: 46px;
 
 		text-shadow: -8px 8px var(--dark);
-	}
-
-	.fadeout::after {
-		content: "";
-		height: 400px;
-		background: linear-gradient(to bottom, var(--medium), var(--light));
 	}
 
 	nav {
@@ -85,7 +72,7 @@
 	}
 
 	@media (min-width: 1024px) {
-		header {
+		.navbar-wrap {
 			height: 100vh;
 			display: grid;
 		}
@@ -112,7 +99,7 @@
 			background: none !important;
 		}
 
-		header > * {
+		.navbar-wrap > * {
 			align-self: flex-start;
 		}
 
