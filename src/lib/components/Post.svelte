@@ -15,8 +15,16 @@
 <div class="post-wrap">
 	<header>
 		<div class="text-container">
-			<h1>{post.title}</h1>
-			<div class="date">{post.date}</div>
+			<div>
+				<h1>{post.title}</h1>
+			</div>
+			<div class="date">
+				<strong>Published: </strong>{post.date}<br></div>
+				{#if post.lastUpdated}
+				<div class="date">
+					<strong>Updated: </strong> {post.lastUpdated}
+				</div>
+				{/if}
 		</div>
 		<div class="cover-image">
 			<img class="placeholder" src={post.coverImage} alt="" />
@@ -28,31 +36,54 @@
 
 <style>
 	.post-wrap {
-		padding: var(--padding-medium);
 		background: var(--white);
-		width: 60ch;
+		width: 100%;
 		margin: 0 auto;
+		border-radius: var(--bdrs);
 	}
 
 	header {
 		position: relative;
-		overflow: hidden;
-		border-radius: var(--bdrs);
-		margin-bottom: var(--padding-medium);
 	}
 
 	.cover-image {
 		width: 100%;
-		height: 300px;
+		height: 250px;
 	}
 
 	.text-container {
-		font-size: var(--medium-fz);
+		display: block;
 		position: absolute;
-		color: var(--white);
-		background: rgba(28, 33, 51, 0.8);
-		padding: var(--padding-medium) var(--padding-large);
-		border-bottom-right-radius: var(--bdrs);
+		font-size: var(--regular-fz);
+		bottom: 0;
+		left: 0;
+	}
+
+	.date strong {
+		font-family: var(--code-font);
+		font-size: var(--regular-fz)
+	}
+	
+	.text-container h1, .text-container .date {
+		display: inline-block;
+		background: var(--white);
+		padding: var(--padding-small) var(--padding-regular);
+		box-shadow: rgba(var(--bxs-black), 0.09) 0px 2px 1px, rgba(var(--bxs-black), 0.09) 0px 4px 2px, rgba(var(--bxs-black), 0.09) 0px 8px 4px, rgba(var(--bxs-black), 0.09) 0px 16px 8px, rgba(var(--bxs-black), 0.09) 0px 32px 16px;
+	}
+
+	.text-container .date {
+		margin-right: 2rem;
+	}
+
+	.text-container .date:nth-of-type(3) {
+		margin-top: -5rem;
+		/* background: salmon; */
+	}
+
+	.content {
+		position: relative;
+		box-shadow: 0 -10px 8px -6px rgba(var(--bxs-black), 0.5);
+		padding: var(--padding-regular) var(--padding-large);
 	}
 
 	.content :global(p) {
@@ -72,36 +103,66 @@
 		color: rgb(0, 80, 160);
 	}
 
+	.content :global(h1), .content :global(h2), .content :global(h3), .content :global(h4) {
+		margin-top: var(--padding-huge);
+		margin-bottom: var(--padding-regular);
+	}
+
+	.content :global(h2:first-of-type) {
+		margin-top: var(--padding-regular);
+	}
+
 	.content :global(img) {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: var(--padding-regular);
-		/* width: 100%; */
 		border-radius: var(--bdrs);
+	}
+
+	.content :global(img + p) {
+		text-align: center;
+		font-family: var(--flourish-font);
+		margin-bottom: var(--padding-large);
 	}
 
 	.content :global(.image-caption) {
 		text-align: center;
-		font-family: Actor, sans-serif;
+		font-family: var(--flourish-font);
 		margin-bottom: var(--padding-large);
 	}
 
 	footer {
-		font-family: Fira Code;
+		font-family: var(--code-font);
 		text-align: center;
 
 		padding: var(--padding-medium);
-		margin: -1.5rem;
-		margin-top: 1rem;
-
 		color: var(--white);
 		background: var(--dark);
+	}
+
+	@media (min-width: 500px) {
+		.text-container {
+			font-size: var(--medium-fz);
+			bottom: var(--padding-regular);
+			left: var(--padding-regular);
+		}
+
+		.cover-image {
+			height: 300px;
+		}
+	}
+
+	@media (min-width: 500px) and (max-width: 1023px) {
+		.post-wrap {
+			width: 50ch;
+		}
 	}
 
 	@media (min-width: 1024px) {
 		.post-wrap {
 			position: absolute;
+			width: 60ch;
 			left: 50%;
 			transform: translate(-50%);
 		}

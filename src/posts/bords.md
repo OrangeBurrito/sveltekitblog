@@ -1,78 +1,64 @@
 ---
 title: 'Bords'
 date: 2021-03-03
+lastUpdated: 2021-07-30
 coverImage: 'https://i.pinimg.com/736x/7b/fa/a7/7bfaa744602122753529a30e31131ffd.jpg'
 ---
 
 ## introduction
 Birds.  We've all encountered them, and chances are you've seen or heard one recently.
-Whether it be from birdsong from afar drifting into your ear canal or head-bobbing fiends congregating
-in crowds to peck at breadcrumbs, or even in your fast food drive-thru order.
 
-To readers who haven't gone through a bird-lover phase in their tweens, they come across as ornamental,
-living background props moving on a dolly while the epic opera of human history unfolds. 
-Well, you thought wrong! I'm here to rip open the curtains and shatter the illusion.  There are no crickets in Wayward Pines!
-Like every other species, birds fit together in ecosystems like the
-the missing piece from your 1000-piece jigsaw puzzle.
+Whether it be from birdsong from afar drifting into your ear canal or head-bobbing fiends congregating in crowds to peck at breadcrumbs, or even in your fast food drive-thru order.
 
-![missing piece](https://i.imgur.com/llHAvNv.jpg)
+If you haven't gone through a bird-lover phase in your tweens, you probably haven't paid much attention to birds.  Being so wrapped up in our own lives doesn't leave much time for admiring the wildlife, more so if you live in an urban jungle where most birds are head-bobbing pigeons looking for breadcrumbs.
 
-Recline your chair back a reasonable distance and get comfy, Act One is starting!
-In fact, why not stop by at the concession stand while you're at it, you'll get a free hard drink included with your greasy, sauce-slathered meat-based meal of choice.
+Like any nature nonfiction book worth its salt will tell you, [ insert animals/plants/bacterias/archaes ] play an important role in Earth's ecosystems. The same goes for birds, but to an extent as great as nitrogen-fixing bacteria? that has yet to be seen.
 
-Wikipedia? Get that archaic shit outta my face!
-News Articles? Get those clickbaity lies out of my face, this is No Country for Journalists!
-We're not here to be scHoLaRLy or "even remotely accurate"! This is Entertainment
-with a capital E! It's a fact that Wikipedia isn't the epitome of fun, and what better way to know moar about bords
-than with exciting text and eye-capturing pictures? Everyone likes pictures! Look, there's one over there:
+As a sidenote, if you're not aware yet, this isn't an essay about eco-terrorism, but a light traipse through the forest of bird-dom.  Put down your Snopes magnifying glasses because nothing is sacred, not even facts!
 
-<img src="https://i.kym-cdn.com/entries/icons/facebook/000/021/257/mroange.jpg" style="height: 200px; width: auto"/>
-
+In today's blog post, we'll figure out what birds are, why they make the noise™, and if they really exist.  There'll also be a whole lot of bird-related information that may or not be useful.
 
 ## The Dawn of the Squawk
 In order to figure out if birds are real, we first have to figure out what they are.
+
 The first step to doing that is to take a look back at their place of origin.
 
-Forty-five billion days ago on the ancient supercontinent of Pangaea (the "pan" part comes from pancakes, due to the continent's pancake-like shape and considering that the geologist in charge of naming ancient proto-continents had skipped breakfast that day and was conjuring up delectable images of fluffy golden pancakes topped with pats of butter and soaked with syrup dripping down in rivulets over the crisp brown edges, and the "gaea" part is a throwback to that one time the Ancient Greeks gave the Earth a fursona), the great-great-great(repeat this times a few million)-grandparents of (cont.)
+![map of the continents during the end of the jurassic period](https://static.boredpanda.com/blog/wp-content/uploads/2020/01/3-5e26c86a89fbf-png__700.jpg)
 
-<img src="https://farm9.staticflickr.com/8608/28877294755_8f47e10d60.jpg"/>
-<p class="image-caption">Aerial view of the Ancient Greek Port City Piraeus by <a href="https://www.flickr.com/photos/131546255@N05/" target="_blank">Olivier Lego</a></p>
+Earth, circa 150,000,000 BC
 
-(cont.) modern-day birds were showing their faces for the first time, having evolved from a flightless dinosaur species not too long ago.
-They were known as pterosaurs, and were actually voracious airborne monsters, as massive as they were mean.  They were the bane of many
-earthbound dinosaur moms, whose precious hatchlings were the perfect bite-sized meal for the apex predators (the juveniles were swallowed whole)
+An unspeakably long time ago, when the continents looked like chinese knockoffs of your average Mercator projection, the great-great-great-great (repeat this times a few million) grandparent of modern-day birds evolved from some yet-unknown feathered dinosaur.  This creature was the first bird, christened Archaeopteryx by archeologists.
 
-If you looked at one up close (provided you were a suicidal madman), they would look a lot like overgrown leathery cranes that dialed
-up the head and neck size to 11.
+![fossil of Archaeopteryx embedded in rock](https://www.thoughtco.com/thmb/VVcr5oUTcXlYNuzVjCHdUD6uxlM=/1500x1000/filters:fill(auto,1)/2048px-Archaeopteryx_fossil-5c5b17f246e0fb0001849b0e.jpg)
 
-<img src="https://i.redd.it/mjn2gamsosg01.jpg" style="height: 400px; width: auto"/>
-<p class="image-caption">Model of Quetzalcoatlus northropi next to a 180cm tall dude</p>
+The fossilized remains of an Archaeopteryx caught doing *the worm*.
 
-When it came to pterosaurs, the substantial Quetzalcoatlus was the most impressive of the lot (pictured above).
-It was essentially a winged giraffe with a giant sword for a head.
-Surprisingly, Quinoafloatmust were toothless. A theory goes that they fed like [skimmers](https://www.wikiwand.com/en/Rynchops), with their comically sized bodies
-gliding over water, cleaving the waves with their proto-beaks in the search for fish.  Later, a few sceptical paleontologists
-debunked the theory with a study that showed the skim-feeding method generating too much drag to be efficient.
+But this fellow certainly had competition.  By the time the Cretaceous rolled around, the featherless cousins of Archeopteryx, pterosaurs, had been around for fifty million years, giving them plenty of time to grow to gargantuan proportions, with carnivorous appetites to match.
 
-<img src=""/>
-<p class="image-caption">Inefficiency of the proposed skim-feeding method</p>
+There were smaller species of pterosaur, but over time these species started to die out in favor of the larger giraffe-sized pterosaurs.
 
-Another, more convincing theory is that Quadruplesmoketusks were terrestial hunters that hunted small vertebrates on land
-(sorry, dinosaur moms).
+If you stole a time machine and was face-to-face with a large pterosaur, you would be eaten, so instead here's an sculptor's rendition of the largest species of pterosaur known to us (based on fossils):
 
-With the discovery of more and more fossils, evidence increasingly points to the large beak-spears
-having a dual function as a tool for bored pterosaurs, who could have frequently used them in mock-swordfights with their siblings. 
+![model of the quetzalcoatlus pterosaur next to an 160 centimeter tall man](https://i.redd.it/mjn2gamsosg01.jpg)
+
+Model of quetzalcoatlus northropi next to a guy of average height
+
+The quetzalcoatlus has a stupid beak-to-body ratio, and would be hard to keep in a zoo, mainly because it would keep eating all the exotic animals.
+It was essentially a winged, carnivorous giraffe with a giant sword for a head.  
+
+With the discovery of more and more of these types of fossils, evidence increasingly points to the large beak-spears having a dual function as a tool for bored pterosaurs, who could have frequently used them in mock-swordfights with their siblings.
 
 <img src=""/>
-<p class="image-caption">The art of swordsmanship is said to have surfaced in the late Triassic Period</p>
 
-For quite a long time, pterosaurs flourished in the substantially oxygen-rich and humid sans-ice-caps world of yesteryear.
-They would likely have continued to become even more apexy predatory, but we all know what happened 66 million years ago
-in the northwest margin of the Yucatán Peninsula.
-Sadly, the much-described Pretzelsoapdust went with 75% of all living species at the time into the ether, and then there were none.
+The art of swordsmanship is said to have surfaced in the late Triassic Period
 
-Have you noticed all of the "would likelys" and "could haves"? It's because no one *really* knows what pterosaurs were like.
-They may have been a startling shade of hot pink for all we know.  Unfortunately, dried old bones can't tell us everything.
+Your average pigeon may dream of glory from days past, when the median temperature was a muggy four celsius above modern times and the pterosaur reigned supreme, but it is mistaken, for its true ancestor was Archaeopteryx, who looked rather timid in comparison.
+
+But in a serendipitous turn of events, something rather big happened 66 million years ago in the northwest margin of the Yucatán Peninsula that wiped out quetzalcoatlus and almost all large species on Earth, robbing them of the opportunity to evolve into even more formidable and giving Archaeopteryx an immeasurable advantage.
+
+### Conjecture?
+Unfortunately, dried old bones can't tell us everything.  There's a fair amount of guesswork at play here, so we can't be certain what pterosaurs and Archaeopteryx looked like unless we invent a time machine.
+Pterosaurs may have been a startling shade of hot pink for all we know.
 
 ## On the Origin of S̶p̶e̶c̶i̶e̶s̶ Birds
 
@@ -231,6 +217,12 @@ Hummingbirds are unlike other birds, not just because they're tiny and
 Studies have shown that the better the flight, the worse the swimming.  Penguins are one of
 the most skilled swimmers in the Aves class, but are permanently grounded.  Different body
 plans are suited for different things.
+
+### Ugly Mugs
+
+Not all birds are born equal.  Some are gracious and sleek, and others... well, they have great personalities!
+
+the Northern Bald Ibis might have a face with the texture of corned beef and attire resembling a goth's usual wardrobe, 
 
 ## introduction ✅
 ## Origin of birds ✅

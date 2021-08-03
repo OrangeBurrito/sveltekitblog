@@ -3,6 +3,15 @@
 	import marked from 'marked'
 
 	const renderer = new marked.Renderer()
+
+	// for styling p tags after image tags (intended to be captions)
+	renderer.paragraph = (text) => {
+		if (text.startsWith("<img")) {
+			return text + '\n'
+		}
+		return '<p>' + text + '</p>' 
+	}
+
 	renderer.link = (href,title,text) => '<a target="_blank" href="'+ href +'" title="' + title + '">' + text + '</a>';
 
 	marked.setOptions({

@@ -9,10 +9,8 @@
 <style>
 	@font-face {
 		font-family: "Redacted Script Bold";
-		font-style: normal;
-		font-weight: normal;
 		src: local("Redacted Script Bold"),
-			url("/srcRedactedScript-Bold.woff") format("woff");
+			url("/redacted-script-bold.woff") format("woff");
 	}
 
 	.polaroid {
@@ -38,7 +36,7 @@
 		transform: translate(-50%, 0);
 		transform: rotate(4deg);
 		background: #beb98b;
-		box-shadow: 1.67379px 4.18446px 8.36893px 0.836893px rgba(28, 33, 51, 0.4);
+		box-shadow: 1.67379px 4.18446px 8.36893px 0.836893px rgba(var(--bxs-black), 0.4);
 	}
 
 	.polaroid .caption {
@@ -55,6 +53,12 @@
 		width: 100%;
 	}
 
+	@media (max-width: 750px) {
+		.polaroid {
+			font-size: 0.5rem;
+		}
+	}
+
 	@media (min-width: 1024px) {
 		.polaroid {
 			position: relative;
@@ -63,7 +67,7 @@
 			top: 0;
 			right: 0;
 			font-size: 1.3rem;
-			font-family: Helvetica Neue;
+			font-family: var(--regular-font);
 			padding: 0.8rem;
 			transition: 0.1s ease-out;
 		}
@@ -78,7 +82,7 @@
 
 		.polaroid:hover {
 			transform: rotate(0deg);
-			box-shadow: -4.18446px 3.34757px 8.36893px rgba(28, 33, 51, 0.1);
+			box-shadow: -4.18446px 3.34757px 8.36893px rgba(var(--bxs-black), 0.1);
 		}
 
 		.polaroid:hover > .tape {

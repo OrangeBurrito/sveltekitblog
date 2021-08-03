@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Actor&family=Inter:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=IBM+Plex+Mono:wght@700&display=swap");
 
 :root {
-	--black: #1c2133;
+		--black: #1c2133;
 	--dark: #38405f;
 	--medium: #647aa3;
+	--medium-light:#8BA0C3;
 	--light: #afc1d6;
 	--white: #f7f9f7;
 	--accent: #b96d40;
+	--bxs-black: 28, 33, 51;
+
+
 	--bdrs: 15px;
-	--card-shadow: rgba(28, 33, 51, 0.1) 0px 20px 25px -5px, rgba(28, 33, 51, 0.04) 0px 10px 10px -5px;
+	--card-shadow: rgba(var(--bxs-black), 0.1) 0px 20px 25px -5px, rgba(var(--bxs-black), 0.04) 0px 10px 10px -5px;
 
 	--small-fz: 12px;
 	--regular-fz: 18px;
@@ -21,6 +26,13 @@
 	--padding-regular: 1rem;
 	--padding-medium: 1.5rem;
 	--padding-large: 2rem;
+	--padding-huge: 3rem;
+
+	--regular-font: Helvetica Neue, sans-serif;
+	--header-font: Inter, Georgia;
+	--logo-font: IBM Plex Mono, Impact, Georgia;
+	--code-font: Fira Code, monospace, sans-serif;
+	--flourish-font: Actor, Verdana, sans-serif;
 }
 
 * {
@@ -30,13 +42,13 @@
 
 body {
 	font-size: var(--regular-fz);
-	font-family: Helvetica Neue, sans-serif;
+	font-family: var(--regular-font);
 	color: var(--black);
 	background: var(--light);
 }
 
 h1, h2, h3, h4 {
-	font-family: Inter, Georgia;
+	font-family: var(--header-font);
 }
 
 p {
@@ -85,5 +97,5 @@ a {
 }
 
 .date {
-	font-family: Actor;
+	font-family: var(--flourish-font);
 }

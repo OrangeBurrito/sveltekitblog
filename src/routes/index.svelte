@@ -14,17 +14,19 @@
 <script>
 import PostList from "$lib/components/PostList.svelte";
 import SortBar from "$lib/components/SortBar.svelte";
+import Themes from "$lib/components/Themes.svelte";
 
 	export let posts = []
 </script>
 
 <svelte:head>
-	<title>OrangeBurrito</title>
+	<title>OrangeBlog</title>
 </svelte:head>
 
 <main>
 	<PostList {posts}/>
 	<SortBar/>
+	<Themes/>
 	<div class="card library">
 		<h3>Recently Read Reviews</h3>
 	</div>	
@@ -34,12 +36,5 @@ import SortBar from "$lib/components/SortBar.svelte";
 	main {
 		display: grid;
 		grid-template-columns: 8fr 1fr;
-	}
-
-	.library {
-		position: absolute;
-		padding: var(--padding-regular);
-		right: var(--padding-medium);
-		bottom: var(--padding-medium);
 	}
 </style>

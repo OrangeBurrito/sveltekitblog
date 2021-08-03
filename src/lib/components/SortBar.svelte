@@ -7,8 +7,14 @@
 	<button class="sort-desc">DESC</button>
 	<button class="sort-asc">ASC</button>
 	<button class="sort-best">🌟🏆</button>
-	<button class="navigation-older">Previous</button>
-	<button class="navigation-newer">Next</button>
+	<button class="navigation older">
+		<p>Previous</p>
+		<h2 class="number">54</h2>
+	</button>
+	<button class="navigation newer">
+		<p>Next</p>
+		<h2 class="number">56</h2>
+	</button>
 </div>
 
 <style>
@@ -43,5 +49,28 @@
 
 	.sort-wrap button:nth-of-type(odd):hover {
 		background: var(--dark);
+	}
+
+	.navigation {
+		position: relative;
+		border: 2px solid salmon;
+	}
+
+	.navigation p {
+		position: absolute;
+		top: var(--padding-small);
+		left: var(--padding-small);
+	}
+
+	.navigation .number {
+		position: absolute;
+		bottom: 2px;
+		right: 6px;
+		font-size: var(--big-fz);
+		color: var(--dark);
+	}
+
+	.navigation:hover, .navigation:hover > .number {
+		color: var(--light);
 	}
 </style>
