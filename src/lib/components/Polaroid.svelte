@@ -42,7 +42,7 @@
 	.polaroid .caption {
 		text-align: center;
 		padding: 0.1rem 0;
-		color: #333;
+		color: var(--black);
 	}
 
 	.polaroid .caption span {

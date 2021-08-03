@@ -91,16 +91,23 @@
 	}
 
 	.content :global(a) {
-		color: rgb(0, 100, 200);
+		background:
+     linear-gradient(
+       to bottom, var(--accent) 0%,
+       var(--accent) 100%
+     );
+		 padding-bottom: 3px;
+		 background-position: 0 100%;
+		background-repeat: repeat-x;
+		background-size: 4px 2px;
+		color: inherit;
 		text-decoration: none;
+		transition: all .125s ease-in;
 	}
 
 	.content :global(a:hover) {
-		text-decoration: underline;
-	}
-
-	.content :global(a:visited) {
-		color: rgb(0, 80, 160);
+		color: var(--white);
+		background-size: 4px 50px;
 	}
 
 	.content :global(h1), .content :global(h2), .content :global(h3), .content :global(h4) {

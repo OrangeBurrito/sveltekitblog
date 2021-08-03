@@ -5,16 +5,20 @@ lastUpdated: 2021-07-30
 coverImage: 'https://i.pinimg.com/736x/7b/fa/a7/7bfaa744602122753529a30e31131ffd.jpg'
 ---
 
-## introduction
+## Preface
 Birds.  We've all encountered them, and chances are you've seen or heard one recently.
 
 Whether it be from birdsong from afar drifting into your ear canal or head-bobbing fiends congregating in crowds to peck at breadcrumbs, or even in your fast food drive-thru order.
 
 If you haven't gone through a bird-lover phase in your tweens, you probably haven't paid much attention to birds.  Being so wrapped up in our own lives doesn't leave much time for admiring the wildlife, more so if you live in an urban jungle where most birds are head-bobbing pigeons looking for breadcrumbs.
 
-Like any nature nonfiction book worth its salt will tell you, [ insert animals/plants/bacterias/archaes ] play an important role in Earth's ecosystems. The same goes for birds, but to an extent as great as nitrogen-fixing bacteria? that has yet to be seen.
+Like any nature nonfiction book worth its salt will tell you, [ insert animals/plants/bacterias/archaeas ] play an important role in Earth's ecosystems. The same goes for birds, but to an extent as great as nitrogen-fixing bacteria? that has yet to be seen.
 
-As a sidenote, if you're not aware yet, this isn't an essay about eco-terrorism, but a light traipse through the forest of bird-dom.  Put down your Snopes magnifying glasses because nothing is sacred, not even facts!
+As a sidenote, if you're not aware yet, this isn't an essay about eco-terrorism, but a light traipse through the history and status of the biological class Aves.  Put down your Snopes magnifying glasses because nothing is sacred, not even facts!
+
+![nietzsche's best quote](https://quotefancy.com/media/wallpaper/3840x2160/1700179-Friedrich-Nietzsche-Quote-There-are-no-facts-only-interpretations.jpg)
+
+a good quote by Nietzsche, perfect for debunking skeptics!
 
 In today's blog post, we'll figure out what birds are, why they make the noise™, and if they really exist.  There'll also be a whole lot of bird-related information that may or not be useful.
 
@@ -23,19 +27,19 @@ In order to figure out if birds are real, we first have to figure out what they 
 
 The first step to doing that is to take a look back at their place of origin.
 
+[what](https://google.com)
+
 ![map of the continents during the end of the jurassic period](https://static.boredpanda.com/blog/wp-content/uploads/2020/01/3-5e26c86a89fbf-png__700.jpg)
 
 Earth, circa 150,000,000 BC
 
-An unspeakably long time ago, when the continents looked like chinese knockoffs of your average Mercator projection, the great-great-great-great (repeat this times a few million) grandparent of modern-day birds evolved from some yet-unknown feathered dinosaur.  This creature was the first bird, christened Archaeopteryx by archeologists.
+One-sixth of a geological eon ago, when the continents looked like chinese knockoffs of your average Mercator projection, the greatest grandmother of modern-day birds evolved from some yet-unknown feathered dinosaur.  She was the first bird, christened Archaeopteryx by archeologists.
 
 ![fossil of Archaeopteryx embedded in rock](https://www.thoughtco.com/thmb/VVcr5oUTcXlYNuzVjCHdUD6uxlM=/1500x1000/filters:fill(auto,1)/2048px-Archaeopteryx_fossil-5c5b17f246e0fb0001849b0e.jpg)
 
 The fossilized remains of an Archaeopteryx caught doing *the worm*.
 
-But this fellow certainly had competition.  By the time the Cretaceous rolled around, the featherless cousins of Archeopteryx, pterosaurs, had been around for fifty million years, giving them plenty of time to grow to gargantuan proportions, with carnivorous appetites to match.
-
-There were smaller species of pterosaur, but over time these species started to die out in favor of the larger giraffe-sized pterosaurs.
+Unfortunately for Miss A. and her ilk, the skies were fiercely competitive environments.  By the time Archaeopteryx burst into existence, their (mostly) featherless cousins, pterosaurs, had already been around for fifty million years, giving them plenty of time to grow to gargantuan proportions, with carnivorous appetites to match.
 
 If you stole a time machine and was face-to-face with a large pterosaur, you would be eaten, so instead here's an sculptor's rendition of the largest species of pterosaur known to us (based on fossils):
 
@@ -76,12 +80,14 @@ started accumulating finches for his nautical menagerie.
 photographs of non-baby Darwin are either of him as decrepit old man or as a balding, middle-aged man. -->
 
 <img src="https://i.imgur.com/MlVAhKz.jpg"/>
-<p class="image-caption">Birds are a spectrum, explained with Darwin's finches</p>
+<p class="image-caption">One of the few cases where the spectrum theory rings true</p>
 
-As with the finches, birds are a spectrum. If you take a picture of each bird species and line them up, you'll have a bird gradient.
-And they all evolved from only a few surviving pterosaurs.
+In the illustrated version of Richard Dawkins' [The Magic of Reality](https://www.goodreads.com/book/show/13546897-the-illustrated-magic-of-reality), there's a great section displaying what would happen if you lined up photos of all your ancestors, from the latest edition (you), to the first reptile that crawled out of the sea.  As you flip through each one (at incredible speeds), it resembles a gradient of creatures, morphing from one form to the next.
 
-The process by which the lucky pterosaurs morphed into birds was an excruciatingly slow one.
+We can do the same with the finches.  If you line them up, it looks like the chonk chart in avian form (pictured above).
+
+
+The process by which the lucky archaeopteryxes morphed into birds was an excruciatingly slow one.
 Thankfully, it already happened! A few million generations of pterosaurs kept mutating until 
 voila, birds!
 But what about the in-between stages? Natural selection only picks its best, so each version
