@@ -12,14 +12,11 @@
 		return '<p>' + text + '</p>' 
 	}
 
-	renderer.link = (href,title,text) => '<a target="_blank" href="'+ href +'" title="' + title + '">' + text + '</a>';
-
 	marked.setOptions({
 		breaks: true
 	})
 
 	
-
 	export async function load({fetch, page: {params: {slug}}}) {
 
 		const resp = await fetch(`/blog/${slug}.json`)
@@ -45,11 +42,3 @@
 
 
 <Post {post}/>
-
-<style>
-	/* .navbar-wrap::after {
-		content: "";
-		height: 400px;
-		background: linear-gradient(to bottom, var(--medium), var(--light));
-	} */
-</style>

@@ -26,9 +26,9 @@
 		padding: var(--padding-regular);
 		margin: 0 0 8px 8px;
 		font-family: var(--logo-font);
-		font-size: 46px;
+		font-size: 36px;
 
-		text-shadow: -8px 8px var(--dark);
+		text-shadow: -4px 4px var(--dark);
 	}
 
 	nav {
@@ -40,8 +40,8 @@
 		display: block;
 		text-align: center;
 		font-family: var(--code-font);
-		font-size: 26px;
-		padding: var(--padding-regular) 2rem;
+		font-size: 20px;
+		padding: var(--padding-small) 2rem;
 		color: inherit;
 		background: var(--medium-light);
 	}
@@ -66,6 +66,19 @@
 		background: linear-gradient(to left, rgba(100,122,163,0.75) 50%, rgba(100,122,163,0.35) 50%);
 	}
 
+	@media (min-width: 500px) {
+
+		.navbar-wrap .title {
+			font-size: 46px;
+			text-shadow: -8px 8px var(--dark);
+		}
+
+		nav a {
+			font-size: var(--medium-fz);
+			padding: var(--padding-regular);
+		}
+	}
+
 	@media (min-width: 1024px) {
 		.navbar-wrap {
 			height: 100vh;
@@ -82,7 +95,7 @@
 	}
 
 	.navbar-wrap .title {
-		font-size: 60px;
+		font-size: 4.5vw;
 	}
 
 		nav,

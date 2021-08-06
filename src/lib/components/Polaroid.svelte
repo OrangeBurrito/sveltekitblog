@@ -16,11 +16,10 @@
 	.polaroid {
 		position: absolute;
 		padding: 5px;
-		width: 8%;
+		width: 15%;
 		top: 1rem;
 		right: 1rem;
 		background: #fff;
-		font-size: 1rem;
 		font-family: "Redacted Script Bold";
 		transform: rotate(-2deg);
 		align-self: flex-start;
@@ -53,16 +52,22 @@
 		width: 100%;
 	}
 
+	@media (min-width: 700px) and (max-width: 1023px) {
+		.polaroid {
+			width: 10%;
+		}
+	}
+
 	@media (max-width: 750px) {
 		.polaroid {
-			font-size: 0.5rem;
+			font-size: 0.8rem;
 		}
 	}
 
 	@media (min-width: 1024px) {
 		.polaroid {
 			position: relative;
-			width: 80%;
+			width: 75%;
 			margin: 0 auto;
 			top: 0;
 			right: 0;

@@ -27,15 +27,21 @@ import Post from "./Post.svelte";
 <style>
 	.list {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		grid-auto-rows: auto;
 		gap: var(--padding-medium);
 		padding: var(--padding-medium);
-		height: 100vh;
+		min-height: 0;  /* NEW */
+  	min-width: 0; 
+	}
+
+	.placeholder {
+		max-height: 150px;
 	}
 
 	.card {
-		display: grid;
-		grid-template-rows: 40% 45% 15%;
+		overflow: hidden;
+		min-width: 0;
 		top: 0;
 		transition: 0.1s ease-out;
 	}
@@ -49,6 +55,10 @@ import Post from "./Post.svelte";
 		color: var(--accent);
 	}
 
+	.info-container {
+		margin-top: -1rem;
+	}
+
 	@media screen and (max-width: 1200px) {
 		.text-container :global(.title) {
 			font-size: 22px;
@@ -57,6 +67,12 @@ import Post from "./Post.svelte";
 		.text-container :global(.description) {
 			font-size: 16px;
 			line-height: 130%;
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		.list {
+			max-height: 100vh;
 		}
 	}
 </style>
