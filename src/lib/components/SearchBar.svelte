@@ -6,11 +6,11 @@
 
 <style>
 	.search-wrap {
-		width: calc(100% - var(--padding-medium) * 2);
+		width: 100%;
 		display: flex;
 		background: var(--white);
 		border-radius: var(--bdrs);
-		margin: var(--padding-medium);
+		grid-area: search;
 	}
 
 	input {
@@ -22,6 +22,7 @@
 		padding: var(--padding-regular);
 		border: none;
 		border-radius: var(--bdrs);
+		color: inherit;
 	}
 
 	.sorting-btn {

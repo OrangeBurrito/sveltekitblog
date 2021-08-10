@@ -18,7 +18,6 @@
 <style>
 	.navbar-wrap {
 		position: relative;
-		color: var(--white);
 		background: var(--medium);
 	}
 
@@ -28,12 +27,15 @@
 		font-family: var(--logo-font);
 		font-size: 36px;
 
-		text-shadow: -4px 4px var(--dark);
+		text-shadow: -4px 4px var(--theme-dark);
+		color: var(--theme-white);
 	}
 
 	nav {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+
+		color: var(--theme-white);
 	}
 
 	nav a {
@@ -70,7 +72,7 @@
 
 		.navbar-wrap .title {
 			font-size: 46px;
-			text-shadow: -8px 8px var(--dark);
+			text-shadow: -8px 8px var(--theme-dark);
 		}
 
 		nav a {

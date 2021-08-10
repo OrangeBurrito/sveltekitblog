@@ -4,7 +4,7 @@ import Post from "./Post.svelte";
 	export let posts = [];
 </script>
 
-<div class="list">
+<div class="list-wrap">
 	{#each posts as post}
 		<a class="card" href={`blog/${post.slug}`}>
 			<img class="placeholder" src={post.coverImage} alt=""/>
@@ -25,14 +25,13 @@ import Post from "./Post.svelte";
 </div>
 
 <style>
-	.list {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-		grid-auto-rows: auto;
+	.list-wrap {
+		width: 100%;
+		overflow-x: scroll;
+		display: flex;
+		flex-wrap: nowrap;
 		gap: var(--padding-medium);
-		padding: var(--padding-medium);
-		min-height: 0;  /* NEW */
-  	min-width: 0; 
+		grid-area: posts;
 	}
 
 	.placeholder {
@@ -41,7 +40,7 @@ import Post from "./Post.svelte";
 
 	.card {
 		overflow: hidden;
-		min-width: 0;
+		min-width: 250px;
 		top: 0;
 		transition: 0.1s ease-out;
 	}
@@ -71,7 +70,7 @@ import Post from "./Post.svelte";
 	}
 
 	@media screen and (min-width: 1024px) {
-		.list {
+		.list-wrap {
 			max-height: 100vh;
 		}
 	}

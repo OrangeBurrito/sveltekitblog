@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=IBM+Plex+Mono:wght@700&display=swap");
 
 :root {
-		--black: #1c2133;
+	--black: #1c2133;
 	--dark: #38405f;
 	--medium: #647aa3;
 	--medium-light:#8BA0C3;
@@ -10,7 +10,6 @@
 	--white: #f7f9f7;
 	--accent: #b96d40;
 	--bxs-black: 28, 33, 51;
-
 
 	--bdrs: 15px;
 	--bdrs-small: 8px;
@@ -46,6 +45,7 @@ body {
 	font-family: var(--regular-font);
 	color: var(--black);
 	background: var(--light);
+	transition: 0.08s ease-out;
 }
 
 h1, h2, h3, h4 {
@@ -78,6 +78,7 @@ button {
 	cursor: pointer;
 	font-family: inherit;
 	font-size: inherit;
+	color: inherit;
 	background: none;
 	border: none;
   padding: var(--padding-regular);

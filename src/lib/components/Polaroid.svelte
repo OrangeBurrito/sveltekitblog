@@ -19,7 +19,7 @@
 		width: 15%;
 		top: 1rem;
 		right: 1rem;
-		background: #fff;
+		background: var(--polaroid-white);
 		font-family: "Redacted Script Bold";
 		transform: rotate(-2deg);
 		align-self: flex-start;
@@ -41,7 +41,6 @@
 	.polaroid .caption {
 		text-align: center;
 		padding: 0.1rem 0;
-		color: var(--black);
 	}
 
 	.polaroid .caption span {

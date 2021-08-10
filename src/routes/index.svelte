@@ -33,4 +33,22 @@ import Themes from "$lib/components/Themes.svelte";
 </div>
 
 <style>
+	.wrap {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-template-rows: 0.5fr 3fr 2fr;
+		grid-template-areas:
+		'search search'
+		'posts posts'
+		'themes library';
+		flex-direction: column;
+		gap: var(--padding-medium);
+		margin: var(--padding-medium);
+	}
+
+	@media (min-width: 1024px) {
+		.wrap {
+			height: calc(100vh - (var(--padding-medium) * 2));
+		}
+	}
 </style>

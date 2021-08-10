@@ -1,19 +1,80 @@
 <script>
-	function setTheme(className) {
-		window.document.body.classList = className
+	import { browser } from "$app/env";
+	import { onMount } from "svelte";
+import { themes } from "../../themes"
+import {appConfig, setTheme} from '../../stores'
+
+$: {
+		if (browser) {
+			document.body.className = $appConfig.theme
+		}
 	}
+
+	function onSelect(name) {
+		localStorage.setItem('theme', name)
+		setTheme(name)
+	}
+
+	onMount(() => {
+		const savedTheme = localStorage.getItem('theme')
+
+		if (savedTheme) {
+			setTheme(savedTheme)
+		}
+	})
 </script>
 
-<div class="card themes">
+<div class="card themes-wrap">
 	<h1>Themes</h1>
-	<button on:click={() => setTheme('')}>Default</button>
-	<button on:click={() => setTheme('seafloor')}>Seafloor</button>
+	<ul>
+		{#each themes as theme}
+			<li>
+				<button on:click={() => onSelect(theme.name)} class:selected={theme.name === $appConfig.theme}>{theme.name}</button>
+			</li>
+		{/each}
+	</ul>
 </div>
 
 <style>
-	.themes {
+	.themes-wrap {
+		padding: var(--padding-regular);
+		grid-area: themes;
+	}
+
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+
+	li {
+		padding: var(--padding-small);
+		list-style-type: none;
+	}
+
+	button {
+		text-transform: capitalize;
+		background: rgba(0,0,0,0.0);
 		padding: var(--padding-regular);
 	}
+
+	.selected {
+		text-decoration: underline;
+		background: var(--medium-light);
+		padding: var(--padding-regular);
+	}
+
+	button {
+		display: block;
+		padding: 0;
+	}
+
+	:global(body) {
+		--theme-white: var(--white);
+		--theme-dark: var(--dark);
+		--polaroid-white: var(--white);
+	}
+	
 
 	:global(.seafloor) {
 	--black: #0E172F;
@@ -24,5 +85,48 @@
 	--white: #F1FAEE;
 	--accent: #C33C54;
 	--bxs-black: 32, 30, 80;
-}
+	}
+
+	:global(.nord) {
+	--black: #2e3440;
+	--dark: #3b4252;
+	--medium: #4c566a;
+	--medium-light:#81a1c1;
+	--light: #d8dee9;
+	--white: #eceff4;
+	--accent: #8fbcbb;
+	--bxs-black: 46, 52, 64;
+	}
+
+
+	:global(.nightowl) {
+		--black: #d6deeb;
+		--dark: #122d42;
+		--medium: #011627;
+		--medium-light: #122d42;
+		--light: #0b253a;
+		--white: #011627;
+		--accent: #8a63ce;
+
+		--theme-white: var(--accent);
+		--theme-dark: var(--medium-light);
+
+		--polaroid-white: #234d70;
+	}
+
+	:global(.electron) {
+		--black: #f6f6f5;
+		--dark: #252d3c;
+		--medium: #1C212E;
+		--medium-light: #3D4D67;
+		--light: #252d3c;
+		
+		--white: #1C212E;
+		--accent: #E26674;
+
+		--theme-white: #E3C18A;
+		--theme-dark: var(--medium-light);
+
+		--polaroid-white: var(--medium-light);
+	}
 </style>
