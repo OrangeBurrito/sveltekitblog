@@ -26,13 +26,11 @@ $: {
 
 <div class="card themes-wrap">
 	<h1>Themes</h1>
-	<ul>
+	<div class="button-wrap">
 		{#each themes as theme}
-			<li>
 				<button on:click={() => onSelect(theme.name)} class:selected={theme.name === $appConfig.theme}>{theme.name}</button>
-			</li>
 		{/each}
-	</ul>
+	</div>
 </div>
 
 <style>
@@ -41,15 +39,9 @@ $: {
 		grid-area: themes;
 	}
 
-	ul {
+	.button-wrap {
 		display: flex;
 		flex-wrap: wrap;
-	}
-	
-
-	li {
-		padding: var(--padding-small);
-		list-style-type: none;
 	}
 
 	button {
@@ -58,9 +50,30 @@ $: {
 		padding: var(--padding-regular);
 	}
 
+	button:nth-of-type(1) {
+		background: var(--black);
+		color: var(--white);
+	}
+
+	button:nth-of-type(2) {
+		background: var(--dark);
+		color: var(--white);
+	}
+
+	button:nth-of-type(3) {
+		background: var(--medium);
+		color: var(--white);
+	}
+
+	button:nth-of-type(4) {background: var(--medium-light);}
+
+	button:nth-of-type(5) {background: var(--light);}
+
+	button:nth-of-type(6) {background: var(--white);}
+
 	.selected {
 		text-decoration: underline;
-		background: var(--medium-light);
+		background: var(--accent);
 		padding: var(--padding-regular);
 	}
 

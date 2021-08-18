@@ -1,5 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Actor&family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=IBM+Plex+Mono:wght@700&display=swap");
+
+@font-face {
+  font-family: 'Baton Turbo';
+	src: url('/fonts/Baton Turbo Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Baton Turbo';
+  src: url('/fonts/Baton Turbo Regular Italic.otf') format('opentype');
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Baton Turbo';
+  src: url('/fonts/Baton Turbo Bold.otf') format('opentype');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Baton Turbo';
+  src: url('/fonts/Baton Turbo Bold Italic.otf') format('opentype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+  font-family: 'Sohne';
+	src: url('/fonts/sohne-halbfett.otf') format('opentype');
+	font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Sohne';
+	src: url('/fonts/sohne-halbfett-kursiv.otf') format('opentype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+  font-family: 'Sohne';
+	src: url('/fonts/sohne-kraftig.otf') format('opentype');
+	font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Sohne';
+	src: url('/fonts/sohne-kraftig-kursiv.otf') format('opentype');
+	font-weight: 400;
+	font-style: italic;
+}
+
 
 :root {
 	--black: #1c2133;
@@ -10,6 +61,10 @@
 	--white: #f7f9f7;
 	--accent: #b96d40;
 	--bxs-black: 28, 33, 51;
+
+	--theme-white: var(--white);
+		--theme-dark: var(--dark);
+		--polaroid-white: var(--white);
 
 	--bdrs: 15px;
 	--bdrs-small: 8px;
@@ -28,10 +83,10 @@
 	--padding-large: 2rem;
 	--padding-huge: 3rem;
 
-	--regular-font: Helvetica Neue, sans-serif;
-	--header-font: Inter, Georgia;
+	--regular-font: Baton Turbo, Helvetica Neue, sans-serif;
+	--header-font: Sohne, Georgia;
 	--logo-font: IBM Plex Mono, Impact, Georgia;
-	--code-font: Fira Code, monospace, sans-serif;
+	--code-font: monospace, sans-serif;
 	--flourish-font: Actor, Verdana, sans-serif;
 }
 
@@ -53,20 +108,12 @@ h1, h2, h3, h4 {
 }
 
 p {
-	line-height: 1.6;
+	line-height: 1.5;
 }
 
 img {
 	max-width: 100%;
 	object-fit: cover;
-}
-
-img.placeholder {
-	background-image: url("https://cdn.wallpapersafari.com/46/92/aXvp5q.jpg");
-	background-size: cover;
-	background-position: center;
-	width: 100%;
-	height: 100%;
 }
 
 a {

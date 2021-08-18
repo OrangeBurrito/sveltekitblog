@@ -16,7 +16,6 @@ export async function getPosts() {
 		posts.push(post)
 	}
 
-	// TODO: if post has lastUpdated, sort by that instead
 	return posts.slice().sort((a,b) => a.sortDate > b.sortDate ? -1 : 1)
 }
 
@@ -27,15 +26,13 @@ export async function getPostBySlug(slug) {
 	const post = {
 		title: result.frontmatter.find(t => t.key === 'title').value,
 		date: result.frontmatter.find(t => t.key === 'date').value,
-		lastUpdated: result.frontmatter.find(t => t.key === 'lastUpdated')?.value,
 		coverImage: result.frontmatter.find(t => t.key === 'coverImage')?.value,
+		excerpt: result.frontmatter.find(t => t.key === 'excerpt')?.value,
 		content: result.content,
 		slug
 	}
 
 	post.sortDate = parseDate(post.date)
-
-	post.sortLastUpdated = parseDate(post.lastUpdated)
 
 	return post
 }

@@ -1,5 +1,6 @@
 <script>
 	import Polaroid from "$lib/components/Polaroid.svelte";
+	import Bust from '$lib/components/Bust.svelte'
 	import {isFadeout} from '../../stores.js'
 </script>
 
@@ -12,7 +13,8 @@
 		<a href="/projects">Projects</a>
 	</nav>
 
-	<Polaroid />
+	<!-- <Polaroid /> -->
+	<Bust/>
 </div>
 
 <style>

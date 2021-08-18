@@ -34,6 +34,7 @@ import Themes from "$lib/components/Themes.svelte";
 
 <style>
 	.wrap {
+
 		display: grid;
 		grid-template-columns: 1fr 2fr;
 		grid-template-rows: 0.5fr 3fr 2fr;

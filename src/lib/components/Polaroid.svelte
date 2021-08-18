@@ -16,13 +16,14 @@
 	.polaroid {
 		position: absolute;
 		padding: 5px;
-		width: 15%;
+		width: 10%;
 		top: 1rem;
 		right: 1rem;
 		background: var(--polaroid-white);
 		font-family: "Redacted Script Bold";
 		transform: rotate(-2deg);
 		align-self: flex-start;
+		box-shadow: -4.18446px 3.34757px 8.36893px rgba(var(--bxs-black), 0.1);
 	}
 
 	.polaroid .tape {
@@ -35,7 +36,8 @@
 		transform: translate(-50%, 0);
 		transform: rotate(4deg);
 		background: #beb98b;
-		box-shadow: 1.67379px 4.18446px 8.36893px 0.836893px rgba(var(--bxs-black), 0.4);
+		box-shadow: 1.67379px 4.18446px 8.36893px 0.836893px
+			rgba(var(--bxs-black), 0.4);
 	}
 
 	.polaroid .caption {
@@ -86,7 +88,7 @@
 
 		.polaroid:hover {
 			transform: rotate(0deg);
-			box-shadow: -4.18446px 3.34757px 8.36893px rgba(var(--bxs-black), 0.1);
+			box-shadow: none;
 		}
 
 		.polaroid:hover > .tape {

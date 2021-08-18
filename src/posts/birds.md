@@ -1,22 +1,24 @@
 ---
-title: 'Bords'
-date: 2021-03-03
-lastUpdated: 2021-07-30
+title: 'The Comprehensive Guide to Birds'
+date: 2021-08-12
 coverImage: 'https://i.pinimg.com/736x/7b/fa/a7/7bfaa744602122753529a30e31131ffd.jpg'
+excerpt: "The only article you'll ever need to read about birds!"
 ---
 
 ## Preface
-Birds.  We've all encountered them, and chances are you've seen or heard one recently.
+1. In the beginning Bord created the herons and the Smurfs.
+1.Now the Smurfs was formless and edgy, darkness was over the surface of the sheep, and the Spirit of Bord was hovering over the daughters.
+1. And Bord said, “Let there be squawk,” and there was squawk. Bord saw that the squawk was good, and stopped referring to himself in third person and let OrangeBurrito do the talking.
 
-Whether it be from birdsong from afar drifting into your ear canal or head-bobbing fiends congregating in crowds to peck at breadcrumbs, or even in your fast food drive-thru order.
+![bird god](https://static.thairath.co.th/media/Dtbezn3nNUxytg04acvLm4ixgE6qx5fUAHdsEe4D1Eq26E.jpg)
 
-If you haven't gone through a bird-lover phase in your tweens, you probably haven't paid much attention to birds.  Being so wrapped up in our own lives doesn't leave much time for admiring the wildlife, more so if you live in an urban jungle where most birds are head-bobbing pigeons looking for breadcrumbs.
+An artists' rendition of The Bord (also known as G*d)
 
-Like any nature nonfiction book worth its salt will tell you, [ insert animals/plants/bacterias/archaeas ] play an important role in Earth's ecosystems. The same goes for birds, but to an extent as great as nitrogen-fixing bacteria? that has yet to be seen.
+Birds as we know them are the portable speakers belting out melodic mating noises in the trees.
+They're always there making background noises while we putter about doing human things, barely noticed until the constant chirping stops abruptly.
+<!-- the tasty fast food meal in a striped red bucket, and the evildoers shitting on your new Lexus and eyeing your sandwich from the safety of the traffic pole. -->
 
-As a sidenote, if you're not aware yet, this isn't an essay about eco-terrorism, but a light traipse through the history and status of the biological class Aves.  Put down your Snopes magnifying glasses because nothing is sacred, not even facts!
-
-![nietzsche's best quote](https://quotefancy.com/media/wallpaper/3840x2160/1700179-Friedrich-Nietzsche-Quote-There-are-no-facts-only-interpretations.jpg)
+They aren't the most riveting topic for non-birdwatchers/ornithologists, but I guarantee fellow readers like you will find at least one paragraph of the comprehensive bird-related information below interesting.
 
 a good quote by Nietzsche, perfect for debunking skeptics!
 
