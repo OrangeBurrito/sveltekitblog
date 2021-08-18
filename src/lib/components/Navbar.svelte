@@ -1,7 +1,6 @@
 <script>
-	import Polaroid from "$lib/components/Polaroid.svelte";
 	import Bust from '$lib/components/Bust.svelte'
-	import {isFadeout} from '../../stores.js'
+	import {isFadeout} from '$lib/stores.js'
 </script>
 
 <div class="navbar-wrap" class:fadeout={$isFadeout === true}>
@@ -12,8 +11,6 @@
 		<a class="active" href="/">Home</a>
 		<a href="/projects">Projects</a>
 	</nav>
-
-	<!-- <Polaroid /> -->
 	<Bust/>
 </div>
 

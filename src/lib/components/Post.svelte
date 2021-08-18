@@ -1,6 +1,6 @@
 <script>
 	import { onMount, onDestroy } from "svelte";
-	import { isFadeout } from "../../stores.js";
+	import { isFadeout } from "$lib/stores.js";
 	export let post = {};
 
 	onMount(() => {

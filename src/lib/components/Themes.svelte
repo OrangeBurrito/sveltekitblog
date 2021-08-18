@@ -1,8 +1,8 @@
 <script>
 	import { browser } from "$app/env";
 	import { onMount } from "svelte";
-import { themes } from "../../themes"
-import {appConfig, setTheme} from '../../stores'
+	import { themes } from "$lib/themes"
+	import {appConfig, setTheme} from '$lib/stores'
 
 $: {
 		if (browser) {
@@ -25,18 +25,21 @@ $: {
 </script>
 
 <div class="card themes-wrap">
-	<h1>Themes</h1>
+	<h2>Themes</h2>
 	<div class="button-wrap">
 		{#each themes as theme}
-				<button on:click={() => onSelect(theme.name)} class:selected={theme.name === $appConfig.theme}>{theme.name}</button>
+				<button on:click={() => onSelect(theme.id)} class:selected={theme.id === $appConfig.theme}>{theme.name}</button>
 		{/each}
 	</div>
 </div>
 
 <style>
 	.themes-wrap {
-		padding: var(--padding-regular);
 		grid-area: themes;
+	}
+
+	h2 {
+		padding: var(--padding-regular);
 	}
 
 	.button-wrap {
@@ -44,48 +47,29 @@ $: {
 		flex-wrap: wrap;
 	}
 
-	button {
-		text-transform: capitalize;
-		background: rgba(0,0,0,0.0);
-		padding: var(--padding-regular);
+	button:nth-of-type(even) {
+		background: var(--light);
 	}
 
-	button:nth-of-type(1) {
-		background: var(--black);
-		color: var(--white);
-	}
-
-	button:nth-of-type(2) {
-		background: var(--dark);
-		color: var(--white);
-	}
-
-	button:nth-of-type(3) {
+	button:nth-of-type(3n) {
 		background: var(--medium);
-		color: var(--white);
-	}
-
-	button:nth-of-type(4) {background: var(--medium-light);}
-
-	button:nth-of-type(5) {background: var(--light);}
-
-	button:nth-of-type(6) {background: var(--white);}
-
-	.selected {
-		text-decoration: underline;
-		background: var(--accent);
-		padding: var(--padding-regular);
 	}
 
 	button {
 		display: block;
-		padding: 0;
+		flex-grow: 1;
+		padding: var(--padding-regular);
+	}
+
+	.selected {
+		text-decoration: underline;
+		background: var(--accent);
+		color: var(--white);
 	}
 
 	:global(body) {
 		--theme-white: var(--white);
 		--theme-dark: var(--dark);
-		--polaroid-white: var(--white);
 	}
 	
 
@@ -123,8 +107,6 @@ $: {
 
 		--theme-white: var(--accent);
 		--theme-dark: var(--medium-light);
-
-		--polaroid-white: #234d70;
 	}
 
 	:global(.electron) {
@@ -139,7 +121,5 @@ $: {
 
 		--theme-white: #E3C18A;
 		--theme-dark: var(--medium-light);
-
-		--polaroid-white: var(--medium-light);
 	}
 </style>

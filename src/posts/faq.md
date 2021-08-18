@@ -1,7 +1,7 @@
 ---
 title: "The Notorious F.A.Q"
 date: "2021-07-01"
-coverImage: "https://pbs.twimg.com/media/EcXE96fUcAAlZpT.jpg"
+coverImage: "/notoriousfaq.jpg"
 excerpt: "Includes answers to the Ultimate Question of Life, the Universe, and Everything!"
 ---
 
