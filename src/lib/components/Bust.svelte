@@ -1,44 +1,30 @@
-<!-- <div class="outside">
-	<div class="inside"/>
-</div> -->
 <div class="wrap">
-	<div class="img-wrap">
-		<img src="/bust.svg" alt="">
-	</div>
+		<img src="/bust_background.svg" alt="">
 </div>
 
 <style>
 	.wrap {
 		width: 80%;
-		height: 70%;
+		height: 80%;
 		margin: 0 auto;
-		text-align: center;
-	}
-
-	p {
-		padding-top: 1rem;
-		font-size: 1.5rem;
-		color: var(--black);
-		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	}
-
-	.img-wrap {
-		position: absolute;
-		width: 10%;
-		right: 0;
-		top: 0;
-	}
-	
-	@media (min-width: 1024px) {
-		.img-wrap {
-			position: relative;
-			width: 100%;
-		height: 90%;
-		}
 	}
 
 	img {
-		position: relative;
-		bottom: 0.5rem;
+		width: 100%;
+		padding: 1rem;
+		filter: drop-shadow(2px 2px 0 var(--theme-dark))
+        drop-shadow(-2px 2px 0 var(--theme-dark))
+        drop-shadow(2px -2px 0 var(--theme-dark))
+        drop-shadow(-2px -2px 0 var(--theme-dark));
+		transition: 0.1s ease-out;
+		cursor: pointer;
+	}
+
+	img:hover {
+		transform: rotate(-2deg);
+		filter: drop-shadow(7px 2px 0 var(--medium))
+        drop-shadow(-7px 2px 0 var(--medium))
+        drop-shadow(6px 2px 0 var(--theme-dark))
+        drop-shadow(-6px -2px 0 var(--theme-dark));
 	}
 </style>

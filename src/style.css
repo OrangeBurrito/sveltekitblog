@@ -63,7 +63,9 @@
 	--bxs-black: 28, 33, 51;
 
 	--theme-white: var(--white);
-		--theme-dark: var(--dark);
+	--theme-dark: var(--dark);
+
+	--gray: rgba(var(--bxs-black),0.8);
 
 	--bdrs: 15px;
 	--bdrs-small: 8px;

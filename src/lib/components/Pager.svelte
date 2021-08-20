@@ -40,14 +40,14 @@
 			position: absolute;
 			display: flex;
 			gap: var(--padding-regular);
-			top: 0;
+			bottom: 0;
 			right: -3rem;
 
 			background: var(--light);
-			padding: 0 0 var(--padding-regular) var(--padding-regular);
+			padding: var(--padding-regular) 0 0 var(--padding-regular);
 			border-radius: var(--bdrs);
-			border-top-left-radius: 0;
-			border-bottom-right-radius: 0;
+			border-bottom-left-radius: 0;
+			border-top-right-radius: 0;
 		}
 
 		button {

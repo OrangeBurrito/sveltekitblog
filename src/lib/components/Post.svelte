@@ -153,7 +153,7 @@
 	.content :global(ul > li) {
 		font-size: 21px;
 		list-style-type: square;
-		margin: var(--padding-regular) 0rem 1.2rem 0;
+		margin: 0.8rem 0;
 	}
 
 	.content :global(.image-caption) {

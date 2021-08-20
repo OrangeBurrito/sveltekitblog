@@ -34,6 +34,10 @@
 		width: calc(100% - var(--padding-medium)*2);
 		height: 100%;
 		grid-area: posts;
+		background-image: url('https://i.kym-cdn.com/photos/images/original/000/203/742/nothing_to_do_here_by_rober_raik-d4cxltj.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: right;
 	}
 
 	.list-wrap :global(.card-wrap) {

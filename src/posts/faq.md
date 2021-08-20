@@ -1,7 +1,7 @@
 ---
 title: "The Notorious F.A.Q"
 date: "2021-07-01"
-coverImage: "/notoriousfaq.jpg"
+coverImage: "/images/notoriousfaq.jpg"
 excerpt: "Includes answers to the Ultimate Question of Life, the Universe, and Everything!"
 ---
 
@@ -11,7 +11,7 @@ Do you have any burning questions that need answering? no? that's okay, here are
 ***A:*** see below
 
 #### Pros:
-- A header font that isn't Inter for once
+- A header font that isn't Inter
 - Color themes w/ dark mode
 - Totally free blog posts
 - Isn't Medium
