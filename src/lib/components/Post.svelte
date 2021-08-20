@@ -74,7 +74,7 @@
 
 	.content :global(p) {
 		margin-bottom: var(--padding-medium);
-		font-size: 22px;
+		font-size: var(--middling-fz);
 	}
 
 	.content :global(a) {
@@ -136,7 +136,7 @@
 	}
 
 	.content :global(li) {
-		font-size: 22px;
+		font-size: var(--middling-fz);
 		line-height: 1.4;
 		margin-bottom: var(--padding-small);
 	}

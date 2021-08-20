@@ -42,25 +42,35 @@
 
 	.list-wrap :global(.card-wrap) {
 		display: grid;
-		height: 100%;
 		margin-bottom: var(--padding-medium);
 	}
 
 	.list-wrap :global(.card-wrap img) {max-height: 150px;}
 
-	@media screen and (max-height: 780px) {
-		.list-wrap :global(.card-wrap .title) {
-			font-size: 22px;
-		}
+	@media screen and (min-width: 500px) and (max-width: 700px) {
+		.list-wrap {grid-template-columns: 1fr 1fr;}
 	}
 
-	@media screen and (min-width: 375px) {
+	@media screen and (min-width: 500px) {
 		.list-wrap {
 			display: grid;
-			grid-template-columns: repeat(4, 25%);
-		gap: var(--padding-regular);
+			gap: var(--padding-regular);
 		}
-
-		.list-wrap :global(.card-wrap) {margin-bottom: 0;}
+		
+		.list-wrap :global(.card-wrap) {
+			margin-bottom: 0;
+			height: 100%;
+		}
 	}
+	
+	@media screen and (min-width: 701px) {
+		.list-wrap {grid-template-columns: repeat(4, 25%);}
+	}
+
+	@media screen and (max-height: 780px) {
+		.list-wrap :global(.card-wrap .title) {
+			font-size: var(-middling-fz);
+		}
+	}
+
 </style>

@@ -173,4 +173,17 @@ $: {
 		--theme-white: #E3C18A;
 		--theme-dark: var(--medium-light);
 	}
+
+	:global(.deviantart) {
+		--black: #2c3635;
+		--dark: #414d4c;
+		--medium:#7e9180;
+		--medium-light: #98aa96;;
+		--light: #dbe4d7;
+		--white: #fff;
+		--accent: #337287;
+		--bxs-black: 46, 52, 64;
+		
+		--bdrs: 0;
+	}
 </style>

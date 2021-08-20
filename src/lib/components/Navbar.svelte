@@ -21,20 +21,22 @@
 	}
 
 	.navbar-wrap .title {
-		padding: var(--padding-regular);
+		padding: var(--padding-regular) var(--padding-large);
 		margin: 0 0 8px 8px;
 		font-family: var(--logo-font);
 		font-size: 36px;
 
 		text-shadow: -4px 4px var(--theme-dark);
 		color: var(--theme-white);
+		text-align: right;
 	}
 
 	nav {
+		width: 80%;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-
 		color: var(--theme-white);
+		margin-left: auto;
 	}
 
 	nav a {
@@ -96,12 +98,15 @@
 	}
 
 	.navbar-wrap .title {
+		text-align: left;
 		font-size: 4.5vw;
+		padding: var(--padding-regular);
 	}
 
 		nav,
 		nav a {
 			display: block;
+			width: 100%;
 		}
 
 		nav a {

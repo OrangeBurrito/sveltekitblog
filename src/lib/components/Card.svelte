@@ -64,7 +64,7 @@
 	}
 
 	@media screen and (max-width: 1200px) {
-		.title {font-size: 22px;}
+		.title {font-size: var(-middling-fz);}
 	
 		.description {font-size: 16px;line-height: 130%;}
 	}

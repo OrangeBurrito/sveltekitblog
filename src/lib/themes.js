@@ -28,5 +28,11 @@ export const themes = [
 		id: 'electron',
 		number: '709 C',
 		hexCode: '#E26674',
+	},
+	{
+		name: 'DeviantArt',
+		id: 'deviantart',
+		number: '709 C',
+		hexCode: '#7e9180',
 	}
 ]
