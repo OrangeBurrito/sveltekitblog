@@ -1,28 +1,15 @@
 <script>
-	import { browser } from "$app/env";
-	import { onMount } from "svelte";
-	import { themes } from "$lib/themes"
-	import {appConfig, setTheme} from '$lib/stores'
+	import { themeStore, setTheme} from '$lib/stores'
 	import {clickOutside} from '$lib/clickOutside.js'
+	import { createEventDispatcher } from 'svelte';
+	const dispatch = createEventDispatcher();
 
-$: {
-		if (browser) {
-			document.body.className = $appConfig.theme
-		}
+	export let themes = [];
+	export let selectedTheme = "";
+
+	$: {
+		dispatch("selected", selectedTheme);
 	}
-
-	function onSelect(name) {
-		localStorage.setItem('theme', name)
-		setTheme(name)
-	}
-
-	onMount(() => {
-		const savedTheme = localStorage.getItem('theme')
-
-		if (savedTheme) {
-			setTheme(savedTheme)
-		}
-	})
 
 	let open = false
 
@@ -39,7 +26,7 @@ $: {
 	<h2 use:clickOutside on:click_outside={onClickOutside}>THEMES®</h2>
 	<div class="themes-wrap">
 		{#each themes as theme}
-		<button on:click={() => onSelect(theme.id)} class:selected={theme.id === $appConfig.theme}>
+		<button on:click={() => setTheme(theme.id)} class:selected={theme.id === themes.selectedTheme}>
 			<div class="color-block" style="background:{theme.hexCode}"></div>
 			<div class="text-wrap">
 				<div class="name">{theme.name}</div>
@@ -117,73 +104,5 @@ $: {
 		.color-block {
 			min-height: 120px;
 		}
-	}
-
-	:global(body) {
-		--theme-white: var(--white);
-		--theme-dark: var(--dark);
-	}
-
-	:global(.seafloor) {
-		--black: #0E172F;
-		--dark: #1D3557;
-		--medium: #345d8b;
-		--medium-light:#457B9D;
-		--light: #61a1be;
-		--white: #F1FAEE;
-		--accent: #C33C54;
-		--bxs-black: 32, 30, 80;
-	}
-
-	:global(.nord) {
-		--black: #2e3440;
-		--dark: #3b4252;
-		--medium: #4c566a;
-		--medium-light:#81a1c1;
-		--light: #d8dee9;
-		--white: #eceff4;
-		--accent: #8fbcbb;
-		--bxs-black: 46, 52, 64;
-	}
-
-
-	:global(.nightowl) {
-		--black: #d6deeb;
-		--dark: #122d42;
-		--medium: #011627;
-		--medium-light: #122d42;
-		--light: #0b253a;
-		--white: #011627;
-		--accent: #8a63ce;
-
-		--theme-white: var(--accent);
-		--theme-dark: var(--medium-light);
-	}
-
-	:global(.electron) {
-		--black: #f6f6f5;
-		--dark: #252d3c;
-		--medium: #1C212E;
-		--medium-light: #3D4D67;
-		--light: #252d3c;
-		
-		--white: #1C212E;
-		--accent: #E26674;
-
-		--theme-white: #E3C18A;
-		--theme-dark: var(--medium-light);
-	}
-
-	:global(.deviantart) {
-		--black: #2c3635;
-		--dark: #414d4c;
-		--medium:#7e9180;
-		--medium-light: #98aa96;;
-		--light: #dbe4d7;
-		--white: #fff;
-		--accent: #337287;
-		--bxs-black: 46, 52, 64;
-		
-		--bdrs: 0;
 	}
 </style>

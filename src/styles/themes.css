@@ -1,0 +1,87 @@
+@font-face {
+	font-family: 'Trebuchet';
+	src: url('/fonts/trebuchet.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Trebuchet';
+	src: url('/fonts/trebuchet-italic.ttf') format('truetype');
+	font-style: italic;
+}
+
+body {
+	--theme-white: var(--white);
+	--theme-dark: var(--dark);
+}
+
+.seafloor {
+	--black: #0E172F;
+	--dark: #1D3557;
+	--medium: #345d8b;
+	--medium-light:#457B9D;
+	--light: #61a1be;
+	--white: #F1FAEE;
+	--accent: #C33C54;
+	--bxs-black: 32, 30, 80;
+}
+
+.nord {
+	--black: #2e3440;
+	--dark: #3b4252;
+	--medium: #4c566a;
+	--medium-light:#81a1c1;
+	--light: #d8dee9;
+	--white: #eceff4;
+	--accent: #8fbcbb;
+	--bxs-black: 46, 52, 64;
+}
+
+
+.nightowl {
+	--black: #d6deeb;
+	--dark: #122d42;
+	--medium: #011627;
+	--medium-light: #122d42;
+	--light: #0b253a;
+	--white: #011627;
+	--accent: #8a63ce;
+
+	--theme-white: var(--accent);
+	--theme-dark: var(--medium-light);
+}
+
+.electron {
+	--black: #f6f6f5;
+	--dark: #252d3c;
+	--medium: #1C212E;
+	--medium-light: #3D4D67;
+	--light: #252d3c;
+	
+	--white: #1C212E;
+	--accent: #E26674;
+
+	--theme-white: #E3C18A;
+	--theme-dark: var(--medium-light);
+}
+
+.deviantart {
+	--black: #233231;
+	--dark: #40534A;
+
+	--medium:#556C5F;
+	--medium-light: #98aa96;;
+	--light: #C1CEC1;
+	--white: #dbe4d7;
+	--accent: #337287;
+	--bxs-black: 46, 52, 64;
+
+	--theme-white: #FFFFFF;
+	
+	--bdrs: 0;
+
+	--regular-fz: 16px;
+	--middling-fz: 20px;
+
+	--regular-font: Verdana, sans-serif;
+	--header-font: Trebuchet, sans-serif;
+}

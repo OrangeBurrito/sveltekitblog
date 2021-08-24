@@ -12,9 +12,10 @@
 </script>
 
 <script>
-import PostList from "$lib/components/PostList.svelte";
-import SearchBar from "$lib/components/SearchBar.svelte";
-import Themes from "$lib/components/Themes.svelte";
+	import PostList from "$lib/components/PostList.svelte";
+	import SearchBar from "$lib/components/SearchBar.svelte";
+	import ThemeSelector from "$lib/components/ThemeSelector.svelte";
+	import { themeStore, setTheme } from "$lib/stores";
 
 	export let posts = []
 </script>
@@ -26,7 +27,11 @@ import Themes from "$lib/components/Themes.svelte";
 <div class="wrap">
 	<SearchBar/>
 	<PostList {posts}/>
-	<Themes/>
+	<ThemeSelector
+		themes={$themeStore.themes}
+		selectedTheme={$themeStore.selectedTheme}
+		on:selected={e => setTheme(e.detail)}
+	/>
 	<div class="card library">
 		<h3>Latest project</h3>
 	</div>	

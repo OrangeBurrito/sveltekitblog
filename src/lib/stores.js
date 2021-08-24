@@ -1,24 +1,31 @@
-import { writable} from 'svelte/store'
-import {themes} from '$lib/themes.js'
+import { writable } from 'svelte/store'
+import { browser } from '$app/env'
+import { themes } from '$lib/themes.js'
 
 export const isFadeout = writable(false)
 
-const initial = {
-	theme: themes.find(t => t.default).name
+const themeState = {
+	selectedTheme: themes.find(t => t.default).name,
+	themes
 }
 
-export const appConfig = writable(initial)
+if (browser) {
+	themeState.selectedTheme = localStorage.getItem('theme')
+	document.body.className = themeState.selectedTheme
+}
 
+export const themeStore = writable(themeState)
 
-function setTheme(name) {
-	appConfig.update(s => {
-		s.theme = name
+export function setTheme(theme) {
+	localStorage.setItem('theme', theme)
+	document.body.className = theme;
+
+	themeStore.update(s => {
+		s.selectedTheme = theme
 		return s
 	})
+	
 }
-
-export { setTheme }
-
 
 export function createPageSelector(total, limit) {
 	const state = {

@@ -168,3 +168,8 @@ button:hover {
 .date {
 	font-family: var(--flourish-font);
 }
+
+:global(body) {
+	--theme-white: var(--white);
+	--theme-dark: var(--dark);
+}

@@ -32,7 +32,7 @@ export const themes = [
 	{
 		name: 'DeviantArt',
 		id: 'deviantart',
-		number: '709 C',
+		number: '4192 C',
 		hexCode: '#7e9180',
 	}
 ]
