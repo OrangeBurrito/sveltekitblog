@@ -4,6 +4,14 @@ import { themes } from '$lib/themes.js'
 
 export const isFadeout = writable(false)
 
+const postsState = {
+	posts: []
+}
+
+export const searchStore = writable(postsState)
+
+export const postsStore = writable(postsState)
+
 const themeState = {
 	selectedTheme: themes.find(t => t.default).name,
 	themes
@@ -24,7 +32,34 @@ export function setTheme(theme) {
 		s.selectedTheme = theme
 		return s
 	})
+}
+
+export function createSearchBar(query, result, posts) {
+	const state = {
+		query,
+		result,
+		posts
+	}
+
+	const store = writable(state)
 	
+	const originalPosts = store.posts
+
+	function searchFor() {
+		store.update(s => {
+			s.query =
+			// s.posts = originalPosts
+			// searchResults = s.posts.filter(p => p.title.toLowerCase().includes(searchTerms.toLowerCase()))
+			// s.posts = searchResults
+			console.log(s.query, s.result)
+			return s
+		})
+	}
+
+	return {
+		searchBar: store,
+		searchFor
+	}
 }
 
 export function createPageSelector(total, limit) {
@@ -42,7 +77,7 @@ export function createPageSelector(total, limit) {
 			s.page = s.page > 1 ? s.page - 1 : s.page
 			s.startIndex = (s.page - 1) * s.limit
 			return s
-		})
+		}) 
 	}
 
 	function nextPage() {

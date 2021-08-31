@@ -1,6 +1,17 @@
+<script>
+	import { createEventDispatcher } from "svelte";
+
+	export let posts = []
+	export let searchTerms = ''
+
+	const dispatch = createEventDispatcher()
+
+</script>
+
 <div class="search-wrap">
-	<input type="text" placeholder="search for posts">
-	<div class="number-of-posts">??? Posts | </div>
+	<input bind:value={searchTerms} type="text" placeholder="search for posts">
+	<button on:click={()=>dispatch('search', {searchTerms: searchTerms})}>Search!</button>
+	<div class="number-of-posts">{posts.length} Posts | </div>
 	<button class="sorting-btn"> Sorting</button>
 </div>
 

@@ -1,20 +1,27 @@
 <script>
 	import Card from "./Card.svelte";
-	import Post from "./Post.svelte";
-
 	import Pager from "$lib/components/Pager.svelte";
+	import { searchStore } from "$lib/stores.js";
 
-	let selectedPosts = [];
+	export let posts = []
+	let selectedPosts = []
+	let selectedPostsOriginal = []
 
-	function onPageSelected(e) {
+	searchStore.posts = posts
+
+	export function onPageSelected(e) {
 		const {startIndex, endIndex} = e.detail
-			selectedPosts = posts.slice(startIndex, endIndex)
+		selectedPosts = posts.slice(startIndex, endIndex)
+		selectedPostsOriginal = selectedPosts
 	}
 
-	export let posts = [];
+	export const showSortedPosts = () => selectedPosts = searchStore.posts
+
+	export const revertToOriginal = () => selectedPosts = selectedPostsOriginal
 </script>
 
 <div class="list-wrap">
+	<!-- <button on:click={()=>selectedPosts = []} style="background: salmon">click me</button> -->
 	<Pager total={posts.length} limit={4} on:page-selected={onPageSelected}/>
 	{#each selectedPosts as post}
 	<Card href={`blog/${post.slug}`}>
@@ -26,6 +33,8 @@
 	</Card>
 	{/each}
 </div>
+
+<svelte:options accessors/>
 
 <style>
 	.list-wrap {

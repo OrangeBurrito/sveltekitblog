@@ -1,6 +1,6 @@
 <div class="wrap">
-		<img id="large" src="/bust_background.svg" alt="">
-		<img id="small" src="/head.svg" alt="">
+		<img id="large" src="/images/bust_background.svg" alt="">
+		<img id="small" src="/images/head.svg" alt="">
 </div>
 
 <style>
