@@ -13,24 +13,10 @@
 
 <script>
 	import PostList from "$lib/components/PostList.svelte";
-	import SearchBar from "$lib/components/SearchBar.svelte";
 	import ThemeSelector from "$lib/components/ThemeSelector.svelte";
-	import { themeStore, setTheme, searchStore } from "$lib/stores";
+	import { themeStore, setTheme } from "$lib/stores";
 
 	export let posts = []
-
-	searchStore.posts = posts
-
-	let postList
-
-	function onSearched(e) {
-		if (e.detail.searchTerms.trim().length === 0) {
-			postList.revertToOriginal()
-		} else {
-			searchStore.posts = posts.filter(p => p.title.toLowerCase().includes(e.detail.searchTerms.toLowerCase()))
-			postList.showSortedPosts()
-		}
-	}
 </script>
  
 <svelte:head>
@@ -38,8 +24,7 @@
 </svelte:head>
 
 <div class="wrap">
-	<SearchBar posts={searchStore.posts} on:search={onSearched}/>
-	<PostList {posts} postsStore={searchStore.posts} bind:this={postList}/>
+	<PostList {posts}/>
 	<ThemeSelector
 		themes={$themeStore.themes}
 		selectedTheme={$themeStore.selectedTheme}
@@ -56,9 +41,8 @@
 		height: 100vh;
 		display: grid;
 		grid-template-columns: 1fr 2fr;
-		grid-template-rows: 0.5fr 3fr 2fr;
+		grid-template-rows: 1fr 2fr;
 		grid-template-areas:
-		'search search'
 		'posts posts'
 		'themes library';
 		flex-direction: column;

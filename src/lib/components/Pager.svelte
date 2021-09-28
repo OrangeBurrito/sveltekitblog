@@ -31,31 +31,28 @@
 	</script>
 
 	<div class="pager-wrap">	
-		<button on:click={onPreviousPage}>Previous</button>
-		<button on:click={onNextPage}>Next</button>
+		<button on:click={onPreviousPage}>❮ Previous</button>
+		<button on:click={onNextPage}>Next ❯</button>
 	</div>
 
 	<style>
 		.pager-wrap {
-			position: absolute;
 			display: flex;
+			justify-content: flex-end;
 			gap: var(--padding-regular);
-			bottom: 0;
-			right: -3rem;
-
 			background: var(--light);
-			padding: var(--padding-regular) 0 0 var(--padding-regular);
-			border-radius: var(--bdrs);
-			border-bottom-left-radius: 0;
-			border-top-right-radius: 0;
+			margin-top: var(--padding-regular);
 		}
-
+ 
 		button {
 			display: inline-block;
+			font-weight: bold;
 			background: var(--white);
+			border-bottom: 5px solid transparent;
+			border-radius: var(--bdrs-small);
 		}
 
 		button:hover {
-			background: var(--light);
+			border-bottom: 5px solid var(--medium);
 		}
 	</style>

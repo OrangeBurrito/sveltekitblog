@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=IBM+Plex+Mono:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&family=IBM+Plex+Mono:wght@700&display=swap");
 
 @font-face {
   font-family: 'Baton Turbo';
+  /* font-family: 'Plantin MT Pro Light'; */
+	
 	src: url('/fonts/Baton Turbo Regular.otf') format('opentype');
 }
 
@@ -88,7 +90,7 @@
 	--regular-font: Baton Turbo, Helvetica Neue, sans-serif;
 	--header-font: Sohne, Georgia;
 	--logo-font: IBM Plex Mono, Impact, Georgia;
-	--code-font: monospace, sans-serif;
+	--code-font: Fira Code, monospace, sans-serif;
 	--flourish-font: Actor, Verdana, sans-serif;
 }
 
@@ -131,6 +133,7 @@ button {
 	background: none;
 	border: none;
   padding: var(--padding-regular);
+	transition: 0.15s ease-in-out;
 }
 
 button:focus {

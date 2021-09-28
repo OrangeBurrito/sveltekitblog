@@ -32,8 +32,6 @@ export async function getPostBySlug(slug) {
 		slug
 	}
 
-	post.sortDate = parseDate(post.date)
-
 	return post
 }
 
@@ -78,3 +76,5 @@ function parseKeyValues(fm) {
 function getSlug(filename) {
 	return filename.slice(0, filename.lastIndexOf('.'))
 }
+
+const regexWithCharClass = /[cfm]at/g;

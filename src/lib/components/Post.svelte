@@ -12,7 +12,7 @@
 	});
 </script>
 
-<div class="post-wrap">
+<article>
 	<header>
 		<div class="cover-image">
 			<img class="placeholder" src={post.coverImage} alt="" />
@@ -34,10 +34,10 @@
 	</header>
 	<div class="content">{@html post.content}</div>
 	<footer>Copyright © OrangeBurrito 2021</footer>
-</div>
+</article>
 
 <style>
-	.post-wrap {
+	article {
 		display: block;
 		width: 100%;
 		margin: 0 auto;
@@ -171,6 +171,22 @@
 		margin-bottom: var(--padding-large);
 	}
 
+	.content :global(blockquote) {
+		background: var(--light);
+		padding: var(--padding-regular);
+		border-left: 6px solid var(--medium);
+}
+
+	.content :global(blockquote p) {margin: 0}
+
+	.content :global(code) {
+		display: inline-block;
+		font-size: var(--regular-fz);
+		font-family: var(--code-font);
+		padding: var(--padding-regular);
+		margin: var(--padding-small);
+	}
+
 	footer {
 		width: 100vw;
 		font-family: var(--code-font);
@@ -183,7 +199,7 @@
 	}
 
 	@media (min-width: 500px) {
-		.post-wrap {
+		article {
 			margin-top: var(--padding-medium);
 			border-radius: var(--bdrs);
 		}
@@ -245,13 +261,13 @@
 	}
 
 	@media (min-width: 500px) and (max-width: 1023px) {
-		.post-wrap {
+		article {
 			width: 50ch;
 		}
 	}
 
 	@media (min-width: 1024px) {
-		.post-wrap {
+		article {
 			position: absolute;
 			width: 55%;
 			left: 50%;

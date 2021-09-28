@@ -4,25 +4,17 @@ import { themes } from '$lib/themes.js'
 
 export const isFadeout = writable(false)
 
-const postsState = {
-	posts: []
-}
-
-export const searchStore = writable(postsState)
-
-export const postsStore = writable(postsState)
-
 const themeState = {
 	selectedTheme: themes.find(t => t.default).name,
 	themes
 }
+export const themeStore = writable(themeState)
 
 if (browser) {
 	themeState.selectedTheme = localStorage.getItem('theme')
 	document.body.className = themeState.selectedTheme
 }
 
-export const themeStore = writable(themeState)
 
 export function setTheme(theme) {
 	localStorage.setItem('theme', theme)
@@ -32,34 +24,6 @@ export function setTheme(theme) {
 		s.selectedTheme = theme
 		return s
 	})
-}
-
-export function createSearchBar(query, result, posts) {
-	const state = {
-		query,
-		result,
-		posts
-	}
-
-	const store = writable(state)
-	
-	const originalPosts = store.posts
-
-	function searchFor() {
-		store.update(s => {
-			s.query =
-			// s.posts = originalPosts
-			// searchResults = s.posts.filter(p => p.title.toLowerCase().includes(searchTerms.toLowerCase()))
-			// s.posts = searchResults
-			console.log(s.query, s.result)
-			return s
-		})
-	}
-
-	return {
-		searchBar: store,
-		searchFor
-	}
 }
 
 export function createPageSelector(total, limit) {

@@ -10,7 +10,7 @@
 	{/if}
 
 	<div class="text-wrap">
-		<h2 class="title"><slot name="title"/></h2>
+		<h3 class="title"><slot name="title"/></h3>
 		<p class="description"><slot name="description"/></p>
 	</div>
 	
@@ -23,8 +23,7 @@
 <style>
 	.card-wrap {
 		overflow: hidden;
-		display: inline-block;
-		max-width: 300px;
+		position: relative;
 		top: 0;
 		transition: 0.1s ease-out;
 		background: var(--white);
@@ -36,14 +35,18 @@
 		box-shadow: rgba(var(--bxs-black), 0.25) 0px 25px 50px -12px;
 	}
 
-
 	.card-wrap:hover > .text-wrap {
 		color: var(--accent);
+	}
+
+	.card-wrap {
+		background: var(--white)
 	}
 	
 	.image-wrap :global(img) {
 		width: 100%;
-		height: 100%;
+		height: 120px;
+		object-fit: cover;
 	}
 
 	.title {padding: 0 0 var(--padding-small) 0;}
