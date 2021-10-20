@@ -1,58 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&family=IBM+Plex+Mono:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Actor&family=IBM+Plex+Mono:wght@700&display=swap");
 
 @font-face {
-  font-family: 'Baton Turbo';
-  /* font-family: 'Plantin MT Pro Light'; */
-	
-	src: url('/fonts/Baton Turbo Regular.otf') format('opentype');
+  font-family: 'Bookerly';
+	unicode-range: U+000-5FF;
+	font-display: swap;
+	src: local('Bookerly');
+	src: url('/fonts/Bookerly-Regular.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'Baton Turbo';
-  src: url('/fonts/Baton Turbo Regular Italic.otf') format('opentype');
+	font-family: 'Bookerly';
 	font-style: italic;
+	font-display: swap;
+	unicode-range: U+000-5FF;
+	src: local('Bookerly Italic');
+  src: url('/fonts/Bookerly-Italic.woff2') format('woff2');
 }
 
 @font-face {
-	font-family: 'Baton Turbo';
-  src: url('/fonts/Baton Turbo Bold.otf') format('opentype');
+	font-family: 'Bookerly';
 	font-weight: bold;
+	font-display: swap;
+	unicode-range: U+000-5FF;
+	src: local('Bookerly Bold');
+  src: url('/fonts/Bookerly-Bold.woff2') format('woff2');
 }
 
 @font-face {
-	font-family: 'Baton Turbo';
-  src: url('/fonts/Baton Turbo Bold Italic.otf') format('opentype');
-	font-weight: bold;
-	font-style: italic;
-}
-
-@font-face {
-  font-family: 'Sohne';
-	src: url('/fonts/sohne-halbfett.otf') format('opentype');
-	font-weight: bold;
-}
-
-@font-face {
-  font-family: 'Sohne';
-	src: url('/fonts/sohne-halbfett-kursiv.otf') format('opentype');
+	font-family: 'Bookerly';
 	font-weight: bold;
 	font-style: italic;
+	font-display: swap;
+	unicode-range: U+000-5FF;
+	src: local('Bookerly Bold Italic');
+  src: url('/fonts/Bookerly-BoldItalic.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'Sohne';
-	src: url('/fonts/sohne-kraftig.otf') format('opentype');
-	font-weight: 400;
+  font-family: 'Triplex Sans';
+	font-weight: bold;
+	font-display: swap;
+	unicode-range: U+000-5FF;
+	src: local('Triplex Sans Bold');
+	src: url('/fonts/Triplex-Sans-Bold.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'Sohne';
-	src: url('/fonts/sohne-kraftig-kursiv.otf') format('opentype');
-	font-weight: 400;
+  font-family: 'Triplex Sans';
+	font-weight: bold;
 	font-style: italic;
+	font-display: swap;
+	unicode-range: U+000-5FF;
+	src: local('Triplex Sans Bold Italic');
+	src: url('/fonts/Triplex-Sans-BoldItalic.woff') format('woff2');
 }
 
+@font-face {
+  font-family: 'Triplex Sans';
+	font-weight: 900;
+	font-display: swap;
+	unicode-range: U+000-5FF;
+	src: local('Triplex Sans Extrabold');
+	src: url('/fonts/Triplex-Sans-Extrabold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Triplex Sans';
+	font-weight: 900;
+	font-style: italic;
+	font-display: swap;
+	unicode-range: U+000-5FF;
+	src: local('Triplex Sans Extrabold Italic');
+	src: url('Triplex-Sans-ExtraboldItalic') format('truetype');
+}
 
 :root {
 	--black: #1c2133;
@@ -64,6 +84,8 @@
 	--accent: #b96d40;
 	--bxs-black: 28, 33, 51;
 
+	--text-color: #282e40;
+
 	--theme-white: var(--white);
 	--theme-dark: var(--dark);
 
@@ -73,25 +95,40 @@
 	--bdrs-small: 8px;
 	--card-shadow: rgba(var(--bxs-black), 0.1) 0px 20px 25px -5px, rgba(var(--bxs-black), 0.04) 0px 10px 10px -5px;
 
+	--text-size-base: 1rem;
+	--text-size-xs: 0.64rem;
+  --text-size-sm: 0.8rem;
+	/* base text size here */
+  --text-size-md: 1.25rem;
+  --text-size-lg: 1.56rem;
+  --text-size-xl: 1.95rem;
+  --text-size-2xl: 2.44rem;
+  --text-size-3xl: 3.05rem;
+  --text-size-4xl: 3.81rem;
+
 	--small-fz: 12px;
 	--regular-fz: 18px;
-	--middling-fz: 22px;
+	--middling-fz: 20px;
 	--medium-fz: 24px;
-	--big-fz: 30px;
+	--big-fz: 28px;
+	--bigger-fz: 32px;
+	--large-fz: 40px;
 	--huge-fz: 48px;
 	--massive-fz: 64px;
 
 	--padding-small: 0.5rem;
+	--padding-sm: 0.75rem;
 	--padding-regular: 1rem;
+	--padding-regdium: 1.2rem;
 	--padding-medium: 1.5rem;
 	--padding-large: 2rem;
 	--padding-huge: 3rem;
 
-	--regular-font: Baton Turbo, Helvetica Neue, sans-serif;
-	--header-font: Sohne, Georgia;
+	--regular-font: Bookerly, Helvetica Neue, sans-serif;
+	--header-font: Triplex Sans, Triplex Sans, Georgia;
 	--logo-font: IBM Plex Mono, Impact, Georgia;
-	--code-font: Fira Code, monospace, sans-serif;
-	--flourish-font: Actor, Verdana, sans-serif;
+	--code-font: Menlo, monospace, sans-serif;
+	--flourish-font: Plantin MT Pro, Verdana, sans-serif;
 }
 
 * {
@@ -102,17 +139,30 @@
 body {
 	font-size: var(--regular-fz);
 	font-family: var(--regular-font);
-	color: var(--black);
+	color: var(--text-color);
 	background: var(--light);
 	transition: 0.08s ease-out;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
 	font-family: var(--header-font);
+	line-height: 1;
+	color: var(--black);
 }
 
+h1 {
+	font-size: clamp(36px, 4vw, 48px);
+	font-weight: 900;
+}
+
+h2 {font-size: clamp(32px, 3vw, 40px)}
+h3 {font-size: var(--bigger-fz);}
+h4 {font-size: var(--big-fz);}
+h5 {font-size: var(--medium-fz);}
+
 p {
-	line-height: 1.5;
+	font-size:  clamp(16px, 2vw, 20px);
+	line-height: 1.6;
 }
 
 img {

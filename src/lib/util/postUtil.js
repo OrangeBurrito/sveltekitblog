@@ -16,7 +16,7 @@ export async function getPosts() {
 		posts.push(post)
 	}
 
-	return posts.slice().sort((a,b) => a.sortDate > b.sortDate ? -1 : 1)
+	return posts.slice().sort((a,b) => a.date > b.date ? -1 : 1)
 }
 
 export async function getPostBySlug(slug) {

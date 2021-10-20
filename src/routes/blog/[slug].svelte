@@ -4,11 +4,11 @@
 
 	const renderer = new marked.Renderer();
 
-	// for styling p tags after image tags (intended to be captions)
+	// for left and right aligned images
 	renderer.paragraph = (text) => {
-		if (text.startsWith("<img")) {
+		if (text.startsWith('<img src="') || text.startsWith('<a href="sdl') || text.startsWith('<a href="sdr')) {
 			return text + "\n";
-		}
+		} 
 		return "<p>" + text + "</p>";
 	};
 
@@ -41,7 +41,7 @@
 	import hljs from "highlight.js/lib/core";
 	import javascript from 'highlight.js/lib/languages/javascript';
 	import shell from "highlight.js/lib/languages/shell";
-	import "highlight.js/styles/tomorrow-night-blue.css";
+	import "highlight.js/styles/mono-blue.css";
 	
 	hljs.registerLanguage('javascript', javascript);
 	hljs.registerLanguage('shell', shell);

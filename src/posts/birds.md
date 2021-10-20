@@ -16,11 +16,9 @@ An artists' rendition of The Bord (also known as G*d)
 
 Birds as we know them are the portable speakers belting out melodic mating noises in the trees.
 They're always there making background noises while we putter about doing human things, barely noticed until the constant chirping stops abruptly.
-<!-- the tasty fast food meal in a striped red bucket, and the evildoers shitting on your new Lexus and eyeing your sandwich from the safety of the traffic pole. -->
 
 They aren't the most riveting topic for non-birdwatchers/ornithologists, but I guarantee fellow readers like you will find at least one paragraph of the comprehensive bird-related information below interesting.
 
-a good quote by Nietzsche, perfect for debunking skeptics!
 
 In today's blog post, we'll figure out what birds are, why they make the noise™, and if they really exist.  There'll also be a whole lot of bird-related information that may or not be useful.
 
@@ -29,34 +27,26 @@ In order to figure out if birds are real, we first have to figure out what they 
 
 The first step to doing that is to take a look back at their place of origin.
 
-[what](https://google.com)
-
-![map of the continents during the end of the jurassic period](https://static.boredpanda.com/blog/wp-content/uploads/2020/01/3-5e26c86a89fbf-png__700.jpg)
-
-Earth, circa 150,000,000 BC
+![map of the continents during the end of the jurassic period](https://static.boredpanda.com/blog/wp-content/uploads/2020/01/3-5e26c86a89fbf-png__700.jpg)*Earth, circa 150,000,000 BC*
 
 One-sixth of a geological eon ago, when the continents looked like chinese knockoffs of your average Mercator projection, the greatest grandmother of modern-day birds evolved from some yet-unknown feathered dinosaur.  She was the first bird, christened Archaeopteryx by archeologists.
 
-![fossil of Archaeopteryx embedded in rock](https://www.thoughtco.com/thmb/VVcr5oUTcXlYNuzVjCHdUD6uxlM=/1500x1000/filters:fill(auto,1)/2048px-Archaeopteryx_fossil-5c5b17f246e0fb0001849b0e.jpg)
-
-The fossilized remains of an Archaeopteryx caught doing *the worm*.
+![fossil of Archaeopteryx embedded in rock](https://www.thoughtco.com/thmb/VVcr5oUTcXlYNuzVjCHdUD6uxlM=/1500x1000/filters:fill(auto,1)/2048px-Archaeopteryx_fossil-5c5b17f246e0fb0001849b0e.jpg)*The fossilized remains of an Archaeopteryx caught doing the worm.*
 
 Unfortunately for Miss A. and her ilk, the skies were fiercely competitive environments.  By the time Archaeopteryx burst into existence, their (mostly) featherless cousins, pterosaurs, had already been around for fifty million years, giving them plenty of time to grow to gargantuan proportions, with carnivorous appetites to match.
 
 If you stole a time machine and was face-to-face with a large pterosaur, you would be eaten, so instead here's an sculptor's rendition of the largest species of pterosaur known to us (based on fossils):
 
-![model of the quetzalcoatlus pterosaur next to an 160 centimeter tall man](https://i.redd.it/mjn2gamsosg01.jpg)
-
-Model of quetzalcoatlus northropi next to a guy of average height
+![model of the quetzalcoatlus pterosaur next to an 160 centimeter tall man](https://i.redd.it/mjn2gamsosg01.jpg)*Model of quetzalcoatlus northropi next to a guy of average height*
 
 The quetzalcoatlus has a stupid beak-to-body ratio, and would be hard to keep in a zoo, mainly because it would keep eating all the exotic animals.
 It was essentially a winged, carnivorous giraffe with a giant sword for a head.  
 
 With the discovery of more and more of these types of fossils, evidence increasingly points to the large beak-spears having a dual function as a tool for bored pterosaurs, who could have frequently used them in mock-swordfights with their siblings.
 
-<img src=""/>
+![Illustration of two pterodactyls sword-fighting]()*The art of swordsmanship is said to have surfaced in the late Triassic Period*
 
-The art of swordsmanship is said to have surfaced in the late Triassic Period
+
 
 Your average pigeon may dream of glory from days past, when the median temperature was a muggy four celsius above modern times and the pterosaur reigned supreme, but it is mistaken, for its true ancestor was Archaeopteryx, who looked rather timid in comparison.
 
@@ -68,15 +58,20 @@ Pterosaurs may have been a startling shade of hot pink for all we know.
 
 ## On the Origin of S̶p̶e̶c̶i̶e̶s̶ Birds
 
-About 73,000 days ago, a twenty-something university graduate preparing for a mundane career as a clergyman recieved an invite
-from the ship's captain to join the 10-gun warship-turned survey ship the SMH Beagle (supposedly the ship's captain was in need of a geologist).
-Ten points if you can guess who the university graduate was (If you can't for some reason, it was Charles Darwin). During the voyage,
-while the ship and crew carried out coastline surveys Darwin did as he pleased, thinking up what was to become the book
-everyone recognizes him for. 
+About 73,000 days ago, a twenty-something university graduate preparing for a mundane career as a clergyman recieved an invite from the ship's captain to join the 10-gun warship-turned survey ship the SMH Beagle (supposedly the ship's captain was in need of a geologist).
 
-After surveying the coasts of South America (A lesser-known fact about Darwin is that during this time, he discovered a
-lesser-known species dubbed "the sea-llama of Peru"), the SMH Beagle stopped by the Galapagos Islands. It was here that he
-started accumulating finches for his nautical menagerie.
+Ten points if you can guess who the university graduate was (If you can't for some reason, it was Charles Darwin).
+
+During the voyage, while the ship and crew carried out coastline surveys Darwin did as he pleased, thinking up what was to become the book everyone recognizes him for. 
+
+[](sdr)
+
+A lesser-known fact about Darwin is that during this time, he discovered a
+lesser-known species dubbed "the sea-llama of Peru"
+
+![An actual sea llama](https://images.squarespace-cdn.com/content/v1/583b4d62d2b857c44d4d4c90/1587242632144-CVEGUNDO9W3XFHMEZ5IP/Nembrotha+cristata+-+alpaca+of+the+sea.jpg) *A sea-llama in the flesh**
+
+After surveying the coasts of South America, the SMH Beagle stopped by the Galapagos Islands. It was here that he started accumulating finches for his nautical menagerie.
 
 <!-- Artists' renditions of a nearly ten-thousand day old Darwin in the Galapagos are almost always incorrect. The only 
 photographs of non-baby Darwin are either of him as decrepit old man or as a balding, middle-aged man. -->

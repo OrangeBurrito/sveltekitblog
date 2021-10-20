@@ -31,8 +31,8 @@
 	</script>
 
 	<div class="pager-wrap">	
-		<button on:click={onPreviousPage}>❮ Previous</button>
-		<button on:click={onNextPage}>Next ❯</button>
+		<button on:click={onPreviousPage}>❮ &nbsp &nbsp Previous</button>
+		<button on:click={onNextPage}>Next &nbsp &nbsp ❯</button>
 	</div>
 
 	<style>
@@ -46,6 +46,8 @@
  
 		button {
 			display: inline-block;
+			font-family: var(--header-font);
+			font-size: var(--medium-fz);
 			font-weight: bold;
 			background: var(--white);
 			border-bottom: 5px solid transparent;

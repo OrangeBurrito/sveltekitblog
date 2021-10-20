@@ -46,6 +46,8 @@ body {
 	--white: #011627;
 	--accent: #8a63ce;
 
+	--text-color:#c7ced9;
+
 	--theme-white: var(--accent);
 	--theme-dark: var(--medium-light);
 }

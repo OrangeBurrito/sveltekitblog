@@ -5,6 +5,7 @@
 
 <style>
 	.wrap {
+		z-index: 2;
 		width: 80%;
 		height: 80%;
 		margin: 0 auto;

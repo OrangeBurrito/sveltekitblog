@@ -2,7 +2,6 @@
 	import Card from "./Card.svelte";
 	import Pager from "$lib/components/Pager.svelte";
 	import { browser } from "$app/env";
-import Post from "./Post.svelte";
 	
 	export let posts = []
 
@@ -48,14 +47,13 @@ import Post from "./Post.svelte";
 <style>
 	section {
 		grid-area: posts;
-		background-image: url('https://i.kym-cdn.com/photos/images/original/000/203/742/nothing_to_do_here_by_rober_raik-d4cxltj.png');
-		background-repeat: no-repeat;
-		background-size: contain;
-		background-position: right;
 	}
 
 	/* add margin-bottom to card for mobile view */
-	.list-wrap :global(.card-wrap) {margin-bottom: var(--padding-medium);}
+	.list-wrap :global(.card-wrap) {
+		display: block;
+		margin-bottom: var(--padding-medium);
+	}
 
 	@media screen and (min-width: 500px) {
 		.list-wrap {

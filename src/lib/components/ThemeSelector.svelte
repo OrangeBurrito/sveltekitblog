@@ -41,6 +41,7 @@
 
 <style>
 	.theme-wrap {
+		display: none;
 		grid-area: themes;
 		cursor: pointer;
 		overflow: hidden;
@@ -95,6 +96,12 @@
 	.selected {box-shadow: var(--card-shadow);}
 
 	.selected .name {color: var(--accent)}
+
+	@media (min-width: 550px) {
+		.theme-wrap {
+			display: block;
+		}
+	}
 	
 	@media (min-width: 1280px) {
 		.theme-wrap {
