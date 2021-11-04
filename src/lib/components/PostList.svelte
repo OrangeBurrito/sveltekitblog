@@ -16,12 +16,7 @@
 
 	if (browser) {
 		if (window.matchMedia('(min-width: 500px)').matches) {
-			// displayedPostCount = 3
-			// selectedPosts = selectedPosts
 			console.log('post count:' + displayedPostCount)
-		// } else if (window.screen.availWidth > 700) {
-		// 	displayedPostCount = 4
-		// 	selectedPosts = selectedPosts
 		}
 	
 	}
@@ -35,7 +30,10 @@
 			<img slot="image" src={post.coverImage} alt={post.title}/>
 			<div slot="title">{post.title}</div>
 			<div slot="description">{post.excerpt}</div>
-			<time slot="date" datetime={post.date}>{post.date}</time>
+			<div class="date-wrap" slot="date">
+				<img id="date-icon" src="/images/clock_icon.png" alt="" />
+				<time datetime={post.date}>{post.date}</time>
+			</div>
 		</Card>
 		{/each}
 	</div>

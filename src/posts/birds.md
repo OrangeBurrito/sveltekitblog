@@ -10,9 +10,7 @@ excerpt: "The only article you'll ever need to read about birds!"
 1.Now the Smurfs was formless and edgy, darkness was over the surface of the sheep, and the Spirit of Bord was hovering over the daughters.
 1. And Bord said, “Let there be squawk,” and there was squawk. Bord saw that the squawk was good, and stopped referring to himself in third person and let OrangeBurrito do the talking.
 
-![bird god](https://static.thairath.co.th/media/Dtbezn3nNUxytg04acvLm4ixgE6qx5fUAHdsEe4D1Eq26E.jpg)
-
-An artists' rendition of The Bord (also known as G*d)
+![Garuda, a man-bird creature from Hindu mythology, also the national and royal symbol of Thailand](https://static.thairath.co.th/media/Dtbezn3nNUxytg04acvLm4ixgE6qx5fUAHdsEe4D1Eq26E.jpg)*An artists' rendition of The Bord (also known as "God")*
 
 Birds as we know them are the portable speakers belting out melodic mating noises in the trees.
 They're always there making background noises while we putter about doing human things, barely noticed until the constant chirping stops abruptly.
@@ -29,7 +27,7 @@ The first step to doing that is to take a look back at their place of origin.
 
 ![map of the continents during the end of the jurassic period](https://static.boredpanda.com/blog/wp-content/uploads/2020/01/3-5e26c86a89fbf-png__700.jpg)*Earth, circa 150,000,000 BC*
 
-One-sixth of a geological eon ago, when the continents looked like chinese knockoffs of your average Mercator projection, the greatest grandmother of modern-day birds evolved from some yet-unknown feathered dinosaur.  She was the first bird, christened Archaeopteryx by archeologists.
+One-sixth of a geological eon ago, when the continents were still in the beta testing phasefa, the greatest grandmother of modern-day birds evolved from some yet-unknown feathered dinosaur.  She was the first bird, christened Archaeopteryx by archeologists.
 
 ![fossil of Archaeopteryx embedded in rock](https://www.thoughtco.com/thmb/VVcr5oUTcXlYNuzVjCHdUD6uxlM=/1500x1000/filters:fill(auto,1)/2048px-Archaeopteryx_fossil-5c5b17f246e0fb0001849b0e.jpg)*The fossilized remains of an Archaeopteryx caught doing the worm.*
 

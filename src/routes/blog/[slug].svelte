@@ -41,10 +41,12 @@
 	import hljs from "highlight.js/lib/core";
 	import javascript from 'highlight.js/lib/languages/javascript';
 	import shell from "highlight.js/lib/languages/shell";
+	import yaml from "highlight.js/lib/languages/yaml"
 	import "highlight.js/styles/mono-blue.css";
 	
 	hljs.registerLanguage('javascript', javascript);
 	hljs.registerLanguage('shell', shell);
+	hljs.registerLanguage('yaml', yaml);
 	
 	export let post;
 

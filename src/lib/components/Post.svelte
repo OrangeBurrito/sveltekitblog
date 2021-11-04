@@ -16,10 +16,10 @@
   <header>
     <div class="text-container header-item">
       <h1 class="title">{post.title}</h1>
-      <div class="dates">
-        <span class="date">
-          <strong>Published: </strong>{post.date}<br />
-        </span>
+
+      <div class="date-wrap">
+        <img id="date-icon" src="/images/clock_icon.png" alt="" />
+        {post.date}
       </div>
     </div>
     <div class="cover-image header-item">
@@ -39,16 +39,29 @@
   }
 
   header {
-    height: 250px;
+    display: flex;
     padding: clamp(1rem, 2vw, 2rem);
   }
 
-  header .dates {
-    font-size: var(--medium-fz);
+  .date-wrap {
+    font-size: clamp(16px, 2vw, 20px);
+  }
+
+  #date-icon {
+    width: clamp(14px, 2vw, 18px);
+  }
+
+  .text-container {
+    width: 70%;
+  }
+
+  .cover-image {
+    width: 30%;
   }
 
   .cover-image img {
-    display: none;
+    object-fit: contain;
+    width: 100%;
   }
 
   .article-body {
@@ -67,7 +80,7 @@
   }
 
   .article-body :global(li) {
-		font-size:  clamp(16px, 2vw, 20px);
+    font-size: clamp(16px, 2vw, 20px);
     padding-bottom: var(--padding-sm);
   }
 
@@ -87,6 +100,10 @@
     background-size: 4px 50px;
   }
 
+  .article-body :global(img) {
+    border-radius: var(--bdrs-small);
+  }
+
   .article-body :global(blockquote) {
     background: var(--light);
     padding: var(--padding-regular);
@@ -97,20 +114,30 @@
     padding: 0;
   }
 
-	.article-body :global(img + em) {
-		display: block;
-		width: 100%;
-		text-align: center;
-		font-size: calc(16px, 2vw, 20px);
-		margin: var(--padding-small) 0 var(--padding-large) 0;
-	}
+  .article-body :global(pre) {
+    margin-bottom: var(--padding-large);
+    border-radius: var(--bdrs);
+    overflow: hidden;
+  }
 
+  .article-body :global(code) {
+    font-size: clamp(14px, 2vw, 17px);
+    letter-spacing: -0.3px;
+    line-height: 1.5;
+    border-radius: var(--bdrs-small);
+  }
 
-	:global(a[href="sdl"] + p + img + em),
-	:global(a[href="sdr"] + p + img + em) {
-			display: block;
-      text-align: center;
-			margin-bottom: var(--padding-large);
+  :global(img + em) {
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: clamp(16px, 2vw, 20px);
+    margin: var(--padding-small) 0 var(--padding-large) 0;
+  }
+
+  :global(a[href="sdl"] + p + img + em),
+  :global(a[href="sdr"] + p + img + em) {
+    margin-bottom: var(--padding-large);
   }
 
   footer {
@@ -128,7 +155,7 @@
       display: inline-block;
       vertical-align: top;
       width: 49%;
-      margin-bottom: var(--padding-large);
+      margin-bottom: var(--padding-regular);
     }
 
     :global(a[href="sdl"] + p) {
@@ -136,30 +163,37 @@
     }
 
     :global(a[href="sdl"] + p + img) {
-			transform: translateX(-100%);
-			padding-right: var(--padding-large);
+      transform: translateX(-100%);
+      padding-right: var(--padding-large);
     }
 
-		:global(a[href="sdl"] + img) { padding-right: var(--padding-large);}
+    :global(a[href="sdl"] + img) {
+      padding-right: var(--padding-large);
+    }
 
-		:global(a[href="sdr"] + p) {
-			width: 40%;
-		}
+    :global(a[href="sdr"] + p) {
+      width: 40%;
+    }
 
     :global(a[href="sdr"] + p + img) {
-			width: 60%;
+      width: 60%;
       padding-left: var(--padding-large);
     }
 
     :global(a[href="sdr"] + p + img + em) {
+      text-align: right;
       padding-right: var(--padding-large);
       margin-top: -1.5rem;
+    }
+
+    :global(a[href="sdl"] + p + img + em) {
+      text-align: left;
     }
   }
 
   @media (min-width: 700px) {
     header {
-      display: flex;
+      height: 250px;
     }
 
     .header-item {
@@ -167,10 +201,7 @@
     }
 
     .cover-image img {
-      display: block;
-      object-fit: contain;
       height: 100%;
-      width: 100%;
     }
 
     .article-body {

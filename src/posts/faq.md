@@ -13,13 +13,13 @@ Do you have any burning questions that need answering? no? that's okay, here are
 #### Pros:
 - A header font that isn't Inter
 - Color themes w/ dark mode
-- Totally free blog posts
-- Isn't Medium
+- Piping hot blog posts, 100% free!!!!
+- Not Medium
 
 #### Cons:
 - The lack of target="_blank"
 - Yet another blog
-- (subjective) bad design/layout
+- TBD
 
 ### *Q*: Why the name "OrangeBlog"?
 ***A:*** Unoriginality.
