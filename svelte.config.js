@@ -9,11 +9,7 @@ const config = {
 			fallback: null
 		}),
 		prerender: {
-      crawl: true,
-      entries: [
-        '*',
-        '/blog/[slug]',
-      ],
+      crawl: true
     },
 		target: '#svelte'
 	}
