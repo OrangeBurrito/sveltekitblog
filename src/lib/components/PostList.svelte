@@ -26,7 +26,7 @@
 <section>
 	<div class="list-wrap">
 		{#each selectedPosts as post}
-		<Card href={`blog/${post.slug}`} sveltekit:prefetch>
+		<Card href={`blog/${post.slug}`}>
 			<img slot="image" src={post.coverImage} alt={post.title}/>
 			<div slot="title">{post.title}</div>
 			<div slot="description">{post.excerpt}</div>

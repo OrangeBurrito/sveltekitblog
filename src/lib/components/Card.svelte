@@ -2,7 +2,7 @@
 	export let href
 </script>
 
-<a class="card-wrap" href={href} sveltekit:prefetch>
+<a class="card-wrap" href={href}>
 	{#if $$slots.image}
 	<div class="image-wrap">
 		<slot name="image"></slot>
