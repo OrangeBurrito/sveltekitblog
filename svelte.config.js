@@ -10,7 +10,7 @@ const config = {
 		}),
 		prerender: {
       crawl: true,
-      pages: [
+      entries: [
         '*',
         '/blog/[slug]',
       ],
