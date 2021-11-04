@@ -1,6 +1,4 @@
 <script context="module">
-	export const prerender = true;
-	
 	import Post from "$lib/components/Post.svelte";
 	import marked from "marked";
 
