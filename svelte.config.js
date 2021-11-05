@@ -1,19 +1,12 @@
-import adapter from '@sveltejs/adapter-node';
+import adapter from '@sveltejs/adapter-netlify';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
-		adapter: adapter({
-			out: 'build',
-			precompress: false,
-			env: {
-				host: 'HOST',
-				port: 'PORT'
-			}
-		}),
+		adapter: adapter(),
 		target: '#svelte',
-		ssr: true,
-		vite: {}
+		// ssr: true,
+		// vite: {}
 	}
 };
 
