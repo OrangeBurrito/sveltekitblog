@@ -1,11 +1,9 @@
 import fs from 'fs'
 import path from 'path'
 import util from 'util'
-import {parseDate} from './dateUtil'
 
 const readDirAsync = util.promisify(fs.readdir)
 const readFileAsync = util.promisify(fs.readFile)
-
 
 export async function getPosts() {
 	const filenames = await readDirAsync('src/posts')

@@ -36,6 +36,7 @@
 			</div>
 		</Card>
 		{/each}
+		
 	</div>
 	<Pager total={posts.length} limit={displayedPostCount} on:page-selected={onPageSelected}/>
 </section>
