@@ -7,7 +7,6 @@
     "preview": "svelte-kit preview"
   },
   "devDependencies": {
-    "@sveltejs/adapter-netlify": "^1.0.0-next.35",
     "@sveltejs/kit": "next",
     "highlight.js": "^11.2.0",
     "marked": "^2.1.3",
