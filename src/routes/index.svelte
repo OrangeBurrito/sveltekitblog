@@ -1,4 +1,6 @@
 <script context="module">
+import { browser } from "$app/env";
+
   export async function load({ fetch }) {
     const resp = await fetch("/blog/posts.json");
     const posts = await resp.json();

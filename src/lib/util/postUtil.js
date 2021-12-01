@@ -6,7 +6,7 @@ const readDirAsync = util.promisify(fs.readdir)
 const readFileAsync = util.promisify(fs.readFile)
 
 export async function getPosts() {
-	const filenames = await readDirAsync('src/posts')
+	const filenames = await readDirAsync('static/posts')
 	const posts = []
 
 	for (let filename of filenames) {
@@ -34,7 +34,7 @@ export async function getPostBySlug(slug) {
 }
 
 async function getPostContent(slug) {
-	const fullpath = path.join('src/posts', `${slug}.md`)
+	const fullpath = path.join('static/posts', `${slug}.md`)
 	const postContent = await readFileAsync(fullpath, 'utf-8')
 
 	return postContent
